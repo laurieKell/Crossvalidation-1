@@ -1,0 +1,131 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage[authoryear]{natbib}
+
+%% My definition
+\newcommand{\toshi}{\textcolor{blue}}
+\newcommand{\laurie}{\textcolor{red}}
+\newcommand{\rishi}{\textcolor{green}}
+\newcommand{\iago}{\textcolor{purple}}
+
+\newcommand{\disp}{\displaystyle}
+
+\usepackage{enumitem}
+
+\usepackage{color}
+\definecolor{darkgreen}{rgb}{0.0, 0.5, 0.0}
+\definecolor{darkred}{rgb}{0.7, 0.11, 0.11}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\definecolor{shadecolor}{rgb}{1,1,0.95}
+\definecolor{shade}{rgb}{1,1,0.95}
+\definecolor{coilin}{rgb}{1,0,1}
+
+\newcommand{\laurie}{\textcolor{darkred}}
+\newcommand{\toshi}{\textcolor{darkblue}}
+\newcommand{\rishi}{\textcolor{darkgreen}}
+\newcommand{\todo}[1]{\laurie{\textbf{\textit{#1}}}}
+
+
+\title{Is It You or Your Model Talking}
+\author{Laurie Kell, Toshihide Kitakado, Rishi Sharma, ...}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+\laurie{
+\begin{itemize}
+    \item a
+    \item b
+    \item c
+\end{itemize}
+}
+
+\end{abstract}
+
+\section{Introduction}
+
+In stock assessment most goodness of fit diagnostic are based on residuals obtained from fits to historical observations. To provide fisheries management advice, however, requires predicting the response of a stock to management and checking that the predictions are consistent with reality (pers. com. Sidney Holt). The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead we wish to predict. 
+
+Model validation is important in many fields, e.g. in energy and climate models, as it increases confidence in the outputs of a model and leads to an increase in trust amongst the public, stake and asset-holders and policy makers \citep{kellSubmitted}. For models to be valid they must satisfy four prerequisites \citep{hodge1992}, the situation being modelled must be observable and measurable, exhibit constancy of structure in time, exhibit constancy across variations in conditions not specified in the model and it must be possible to collect sufficient data. Validation examines if a model should be modified or extended and is complementary to model selection and hypothesis testing. Model selection searches for the most suitable model within a family, whilst hypothesis testing examines if the model structure can be reduced.
+
+To explore the robustness of advice to uncertainty requires different model structures to be condition on alternative and potentially conflicting datasets. In such cases model selection criteria such as AIC cannot be applied. The first prerequisite of \cite{hodge} means it is not possible to validate a model, using derived quantities, such as SSB and F. An alternative is to use model-free hindcasting, a form of crossvalidation where observations are compared to their predicted values. The key concept in this case is prediction skill, defined as any measure of accuracy of a forecasted value to the actual (i.e. observed) value that is not known by the model \cite{Huschke1959}.
+
+To illustrate the utility of hindcasting we develop a case study based on bigeye and yellowfin tuna stocks in the Indian, Atlantic and Eastern Pacific Oceans, and four assessment methods, SS, SS-ASPM, Jabba-Select and Jabba. 
+
+\section{Material and Methods}
+
+\cite{kell2016xval} proposed a model-free hindcasting using crossvalidation where observations (e.g. CPUE) are compared to their predicted future values. The hindcasting algorithm is similar to that used in retrospective analysis \citep{Hurtado2014, carvalho}, which involves sequentially removing  observations from the terminal year (peels), fitting the model to the truncated series, and then comparing the difference between model estimates from the truncated time-series to those estimated using the full time series. In a model-free hindcast an additional step is included, i.e. projecting over the missing years and then cross-validating these forecasts against observations to assess the model’s prediction skill.
+
+\subsection{Materials}
+
+Case study based on bigeye and yellowfin tuna stocks in the Indian, Atlantic and Eastern Pacific Oceans, and four assessment methods, SS, SS-ASPM, Jabba-Select and Jabba. 
+
+\subsection{Methods}
+
+\subsubsection{Assessment Models}
+
+\laurie{
+\begin{description}
+\item{SS}
+\item{ASPM}
+\item{Jabba}
+\item{Jabba-Select}
+\end{description}}
+
+
+\subsubsection{Procedure}
+
+\laurie{
+\begin{description}
+\item{Retrospective}
+\item{Hindcast  by year}
+\item{Hindcats by year and index}
+\item{Jackknife}
+\end{description}}
+
+
+\subsubsection{Summary Statistic}
+
+Statistics such as the (Root Mean Square Error) RMSE, are commonly used when simulation testing assessment models \citep[e.g.][]{horbowy2011,kell2016xval}. RMSE, however, does not describe average error alone, favours forecasts that avoid large deviations from the mean, and cannot be used to compare across series. A more robust and easier to interpret statistic for evaluating prediction skill is the Mean Absolute Scaled Error (MASE) \citep{Hyndman2006}. MASE evaluates a model’s prediction skill relative to a na\ddot{i}ve baseline prediction. A prediction is said to have skill if it improves the model forecast compared to the baseline. A widely used baseline forecast for time series is the persistence algorithm that simply takes the value at the previous time step to predict the expected outcome at the next time step as a na\ddot{i}ve in-sample prediction, i.e. tomorrow will the same as today 
+
+The MASE score scales the mean absolute error of the forecasts by the mean absolute error of a na\ddot{i}ve in-sample prediction, such that:
+
+If $Y_t$ is the variable of interest at time $t$ and ${\hat{Y}_t}$ is it's predicted value then the prediction error is $e_t = Y_t - \hat{Y}_t$. For a series of $T$ observations and predictions
+
+\begin{equation} {MASE={\frac{\sum _{t=1}^{T}\left|e_{t}\right|}{\frac {T}{T-1}}\sum _{t=1}^{T}\left|Y_{t+1}-Y_{t}\right|}} \end{equation}
+
+The MASE has the desirable properties of scale invariance, predictable behaviour, symmetry, interpretability and asymptotic normality. MASE is independent of the scale of the data, so can be used to compare forecasts across data sets with different scales. Behaviour is predictable as $y_{t}\rightarrow 0$] Percentage forecast accuracy measures such as the Mean absolute percentage error (MAPE) rely on division of $y_{t}$, skewing the distribution of the MAPE for values of $y_{t}$ near or equal to 0. This is especially problematic for data sets whose scales do not have a meaningful 0, such as temperature in Celsius or Fahrenheit, and for intermittent demand data sets, where $y_{t}=0$  occurs frequently.
+
+Symmetry since The mean absolute scaled error penalises positive and negative forecast errors equally, and penalises errors in large forecasts and small forecasts equally. MASE can be easily interpreted, as values greater than one indicate that in-sample one-step forecasts from the na\ddot{i}ve method perform better than the forecast values under consideration, in other words model forecasts are worse than a random walk. Conversely, a MASE score of 0.5 indicates that the model forecasts twice as accurate as a na\ddot{i}ve baseline prediction; thus the model has prediction skill.  
+
+\section{Results}
+
+\begin{description}
+\item[Example]
+\item[Comparison based on MASE]
+\end{description}
+
+\section{Discussion}
+
+\section{Conclusions}
+
+\bibliographystyle{apalike}
+\bibliography{/home/laurence/Desktop/sea++/xval/manuscripts/peerReview/refs.bib}
+
+\end{document}
