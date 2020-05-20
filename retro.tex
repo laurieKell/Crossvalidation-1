@@ -1,5 +1,19 @@
-Retrospective analysis (Hurtado-Ferro et al., 2014, Carvalho et al. 2017) is commonly used to check the consistency of model estimates, i.e. spawning stock biomass (SSB) and fishing mortality F. Retrospective analysis is a hindcasting approach that involves sequentially removing observations from the terminal year (peels), fitting the model to the truncated series and then comparing the relative difference between model estimates from full time series with the truncated time-series. Retrospective analysis focuses on the bias and accuracy of modeled quantities. The most commonly used statistic is Mohn’s (1999) rho (). In line with recent studies (Carvalho et al. 2016; Winker et al. 2018), we focus on the formulation proposed by Hurtado-Ferro et al. (2014): 
-=1hhXT-h-XT-hXT-h                                    (2)
-where X  is quantity for which Mohn’s is being calculated, X is the corresponding estimate from the reference model that was fitted to the full dataset, T is the terminal year of the assessment and h denotes the number hindcasted time steps (peels). While it is fairly straightforward to compare the  statistic among alternative model runs, the decisions of whether the Mohn’s rho statistic of the ‘best’ model is acceptable or not can be to some extent subjective. To address this, a “rule of thumb” was proposed by Hurtado-Ferro et al. (2014), suggesting values of Mohn’s rho that fall outside the range (-0.15 to 0.20) can be interpreted as an indication of an undesirable retrospective pattern for e.g. longer lived species.
+Retrospective analysis is a hindcasting approach that involves sequentially removing observations from the terminal year (peels), fitting the model to the truncated series and then comparing the relative difference between model estimates from full time series with the truncated time-series. Retrospective analysis focuses on the bias and accuracy of modeled quantities. 
+
+The most commonly used statistic to assess the strength of patterns is Mohn’s $\rho$ a measure of relative error
+
+\begin{equation}\rho = \overline{ \left[ \frac{X_{Y-p,ref}-X_{Y-y,ref}}{X_{Y-y,ref}} \right]}\end{equation}
+
+where $X$ is the quantity for which Mohn’s $\rho$ is being calculated, $Y$ the final year of the simulation, $y$ the last year of a given “peel” $p$, and $ref$ the reference peel, i.e. the most recent assessment.
+
+The difference between the reference ($X{ref}$) the alternative peeled model ($X{p}$) is calculated using the relative error 
+
+\begin{equation} RE=\frac{X_{p}-X_{ref}}{X_{ref}} \end{equation}
+    
+There are problems with the use of $RE$, since for reference model estimates which are low relative to the alternative model, i.e. $X_{ref} < X_{p}$, there is no upper limit, while for $X_{ref} > X_{p}$ the error cannot exceed 1.0. Therefore the chosen metric puts a heavier penalty on negative than on positive errors, i.e. historical underestimates. This means that when comparing models estimates, those that are low will be preferred. This problem can be overcome by using the logarithm of the ratio instead i.e. $log\frac{X_{p}}{X_{ref}}$, which also leads to better statistical properties.
+
+While it is fairly straightforward to compare the  statistic among alternative model runs, the decisions of whether the Mohn’s $\rho$ statistic of the ‘best’ model is acceptable or not can be to some extent subjective. To address this, a “rule of thumb” was proposed by \cite{hurtado2014}, suggesting values of Mohn’s $\rho$ that fall outside the range (-0.15 to 0.20) can be interpreted as an indication of an undesirable retrospective pattern for e.g. longer lived species.
+
+
 
 

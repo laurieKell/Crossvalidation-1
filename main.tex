@@ -25,7 +25,6 @@
 \newcommand{\disp}{\displaystyle}
 
 \usepackage{enumitem}
-https://www.overleaf.com/project/5ca9fed01e2a625dbaeae31f
 \usepackage{algorithm}
 \usepackage{algorithmicx}
 \usepackage{algpseudocode}
@@ -38,74 +37,74 @@ https://www.overleaf.com/project/5ca9fed01e2a625dbaeae31f
 \definecolor{shade}{rgb}{1,1,0.95}
 \definecolor{coilin}{rgb}{1,0,1}
 
-\newcommand{\laurie}{\textcolor{darkred}}
-\newcommand{\toshi}{\textcolor{darkblue}}
-\newcommand{\rishi}{\textcolor{darkgreen}}
-\newcommand{\todo}[1]{\laurie{\textbf{\textit{#1}}}}
-
-
 \title{Is It You or Your Model Talking}
 \author{Laurie Kell, Toshihide Kitakado, Rishi Sharma, ...}
 
 \begin{document}
 \maketitle
-
-\newpage       
+ 
 \section*{Outline}
 
 \begin{itemize}
-    \item To provide fisheries management advice requires predicting the response of a stock to management and checking that the predictions are consistent with reality (pers. com. Sidney Holt). The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead we wish to predict. 
-    \item Often in stocks assessment multiple models with different structures and datasets, are used to explore uncertainty. This means that it is difficult to compare models using conventional metrics such as AIC.  
-    \item We therefore used prediction skill to validate models across families i.e. SS, SS-ASPM, and Jabba for Indian Ocean yellowfin tuna. 
-    \item Retrospective analyses are commonly used to evaluate the stability of stock assessment estimates, however, stability can be at the expense of prediction skill, i.e. by using shrinkage.
-    \item We therefore predict forward from retrospective analysies and then compare model predictions with historical estimates.
-    \item It is not possible, however, to validate models based on model outputs we therefore conduct model free hindcasts, and MASE to compare observations with model estimates. This allows us to compare different data components and model to explore data conflicts and potential model misspecification.
-    \item We also address the question what do you when you have a model with high MASE score and/or mohn’s rho? i.e. a retropective analysis while useful is not sufficient as we can only validate models based on observations.
-    \item  We discuss the use of multiple metrics and the consequences for MSE, i.e. for weighting OMs and developing OEMs    
-    \item How to expand the hindcast to include a jackknife to estimate prediction residuals, and perform the hindcast by series.
+    \item The provision of fisheries management advice requires the assessment of stock status relative to reference points, the prediction of the response of a stock to management, and checking that predictions are consistent with reality (Holt pers com.)    
+    \item Often when conducting a stock assessment multiple models with different structures and datasets, are used to explore uncertainty. This means that it is difficult to compare models using conventional metrics such as AIC. The use of metrics based on prediction skill allows different data components and model to be compared in order to explore data conflicts and potential model misspecification. %The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead we wish to predict. 
+    \item Retrospective analysis is commonly used to evaluate the stability of stock assessment estimates, however, stability can be at the expense of prediction skill, i.e. by using shrinkage. We therefore predict forward the retrospective analyses and then compare model predictions with historical estimates.The absence of retropective patterns, however, while reassuring is not sufficient alone as it is not possible to validate models based on model outputs. We therefore conduct model free hindcasts to compare observations with model estimates. 
+    \item  We  compare SS, SS-ASPM, and Jabba assessments for Indian Ocean yellowfin tuna  using multiple metrics, make recommendations for benchmarking of stock assessments and discuss the consequences for MSE, i.e. weighting of OMs and developing OEMs.    
+    %\item How to expand the hindcast to include a jackknife to estimate prediction residuals, and perform the hindcast by series.
 \end{itemize}
 
 \tableofcontents 
 
-\newpage
+\newpage    
 \begin{abstract}
     Evaluating how well the model fits data has been receiving much attention in fisheries science, both in terms of goodness-of-fit and retrospectively. This however merely tells us how well we can describe the past, yet little how well we can predict the future under alternative management actions. In this paper, we revisit the concepts behind hindcasting cross-validation (hcxval) as an important model-free validation tool for predictive modelling. Together with conventional residual diagnostics and retrospective analysis, we apply hcxval to three examples of alternative candidate models using the recent Indian Ocean yellowfin tuna assessment as a case study. 
     These models comprise the 2019 spatially structured reference model implemented in Stock Synthesis (ss-ref), a deterministic age-structured production model (ss-aspm) of ss-ref and a simplied spatially aggregated stochastic surplus production model implemented in the 'JABBA' package. To assess prediction skill, we computed the Mean-Absolute-Scaled-Error (MASE), which, unlike e.g. Aikaike's Information Criterion, enables to compare across different models fitted different data. The best MASE values (MASE < 1) were determined for ss-asem, which indicates that recruitment deviations in ss-ref were poorly estimated due to no or limited information in the 'noisy' length composition data. By contrast, the area effects retained in ss-aspm best explained its superior prediction skill compared to the spatially aggregated jabba model. We suggest that one-step ahead predictions are efficient for detecting overfitting and for model validation in general, but for future quota advice the forecast horizon should preferably at least match the assessment interval to ultimately increase confidence in the model-based scientific advice by stake holder and managers and policy makers.
 \end{abstract}
-   
+
+\newpage
 \section{Introduction}
 
 In stock assessment most goodness of fit diagnostic are based on residuals obtained from fits to historical observations. To provide fisheries management advice, however, requires predicting the response of a stock to management and checking that the predictions are consistent with reality (pers. com. Sidney Holt). The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead we wish to predict. Validation examines if a model should be modified or extended and is complementary to model selection and hypothesis testing. Model selection searches for the most suitable model within a family, whilst hypothesis testing examines if the model structure can be reduced.
 
-Model validation is important in many fields, e.g. in energy and climate models, as it increases confidence in the outputs of a model and leads to an increase in trust amongst the public, stake and asset-holders and policy makers \citep{kellSubmitted}. For models to be valid they must satisfy four prerequisites \citep{hodge1992}, the situation being modelled must be observable and measurable, it must be possible to collect sufficient data, exhibit constancy of structure in time, and exhibit constancy across variations in conditions not specified in the model. The first two prerequisites should be straight forward but for highly migratory stocks fished in areas beyond national jurisdiction (ABNJ) most stock assessments depend on fisheries dependent data rather than scientific observation. Prerequisite 3 ensures that the model has predictive skill for the same conditions under which the validation tests were conducted, and 4 that the model will still be valid for conditions that differ from those in the validation tests. In the later case this means can the model be used to set robust management advice. 
+Model validation is important in many fields, e.g. in energy and climate models, as it increases confidence in the outputs of a model and leads to an increase in trust amongst the public, stake and asset-holders and policy makers. For models to be valid they must satisfy four prerequisites \cite{hodges1992you}, the situation being modelled must be observable and measurable, it must be possible to collect sufficient data, exhibit constancy of structure in time, and exhibit constancy across variations in conditions not specified in the model. The first two prerequisites should be straight forward, but many stock assessments depend on fisheries dependent data rather than scientific observation. For example highly migratory stocks fished in areas beyond national jurisdiction (ABNJ). Prerequisite 3 ensures that the model has predictive skill for the same conditions under which the validation tests were conducted. Prerequisite 4 ensures that the model will still be valid for conditions that differ from those in the validation tests, i.e. can be used to set robust management advice. 
 
-To explore the robustness of advice to uncertainty requires different model structures to be condition on alternative and potentially conflicting datasets. In such cases model selection criteria such as AIC, however, cannot be applied. The first prerequisite of means it is not possible to validate a model, using derived quantities, such as SSB and F. An alternative is to use model-free hindcasting, a form of crossvalidation where observations are compared to their predicted values. The key concept in this case is prediction skill, defined as any measure of accuracy of a forecasted value to the actual (i.e. observed) value that is not known by the model \cite{Huschke1959}.
+To explore the robustness of advice to uncertainty requires different model structures to be condition on alternative and potentially conflicting datasets. In such cases model selection criteria such as AIC, however, cannot be applied. The first prerequisite means it is not possible to validate a model, using derived quantities, such as SSB and F. The key concept in this case is prediction skill, defined as any measure of accuracy of a forecasted value to the actual (i.e. observed) value that is not known by the model \citep{glickman2000glossary}. Therefore  An alternative is to use model-free hindcasting, a form of crossvalidation where observations are compared to their predicted values.
 
 To illustrate the utility of hindcasting we develop a case study based on bigeye and yellowfin tuna stocks in the Indian, Atlantic and Eastern Pacific Oceans, and four assessment methods, SS, SS-ASPM, Jabba-Select and Jabba. 
 
 \section{Material and Methods}
 
-\cite{kell2016xval} proposed a model-free hindcasting using crossvalidation where observations (e.g. CPUE) are compared to their predicted future values. The hindcasting algorithm is similar to that used in retrospective analysis \citep{Hurtado2014, carvalho}, which involves sequentially removing  observations from the terminal year (peels), fitting the model to the truncated series, and then comparing the difference between model estimates from the truncated time-series to those estimated using the full time series. In a model-free hindcast an additional step is included, i.e. projecting over the missing years and then cross-validating these forecasts against observations to assess the model’s prediction skill.
+\cite{kell2016xval} proposed a model-free hindcasting using crossvalidation where observations (e.g. CPUE) are compared to their predicted future values. The hindcasting algorithm is similar to that used in retrospective analysis \citep{hurtado2014looking}, which involves sequentially removing  observations from the terminal year (peels), fitting the model to the truncated series, and then comparing the difference between model estimates from the truncated time-series to those estimated using the full time series. In a model-free hindcast an additional step is included, i.e. projecting over the missing years and then cross-validating these forecasts against observations to assess the model’s prediction skill.
 
 \subsection{Assessment Methods}
 
 Case study based on Indian Ocean yellowfin tuna stocks and four assessment methods, SS, SS-ASPM, Jabba-Select and Jabba. 
 
-\begin{verbatim}%\input{assess.tex}\end{verbatim}
+\begin{verbatim}\input{assess.tex}\end{verbatim}
 
 \subsection{Procedure}
 
+\subsubsection{Residuals}
+
+%\input{residuals.tex}
+
 \subsubsection{Retrospective}
 
-\begin{verbatim}%include{retro.tex}\end{verbatim}
+%In a retrospective analysis a model is fitted to increasing periods of data to identify systematic inconsistencies \citep{Mohn1999retrospective}.
 
-\subsubsection{Hindcast} 
+%\input{retro.tex}
 
-\begin{verbatim}%include{hindcast.tex}\end{verbatim}
+\subsubsection{Retrospective with Projection}
+#When conducting projections to provide managers with advice,such as a total allowable catch (TAC), the short term is of primary importance as usually the immediate consequences of management advice is a major concern of stakeholders \citep{fricker2013three}. Therefore we also conduct projections for 3 years as part of the retrospective analysis.#
 
-\subsection{Summary Metrics}
 
-\begin{verbatim}%include{metrics.tex}\end{verbatim}
+\subsection{Hindcast}
+
+%\input{hindcast.tex}
+
+\subsubsection{Summary Metrics}
+
+%\input{metrics.tex}
 
 \section{Results}
 
@@ -130,7 +129,7 @@ Figure~\ref{fig:runshat} shoes the predictions residuals, and the fits are summa
         \item It therefore appears that the length compositions just add noise, and that area effects are important
         \item However these is no objective way to choose an assessment based on retrospective analysis as the best model would always be B/MSY = 1 
         \end{itemize}
-    \tem{Model-free cross-validation} confirms the relative performance of the models
+    \item{Model-free cross-validation} confirms the relative performance of the models
     \begin{itemize}
         \item ASPM performs best
         \item Survey 2 performs poorly across all models
@@ -145,20 +144,20 @@ Figure~\ref{fig:runshat} shoes the predictions residuals, and the fits are summa
 
 \section{Discussion}
 
-\begin{verbatim}%include{discussion.tex}\end{verbatim}
+\begin{verbatim}\input{discussion.tex}\end{verbatim}
 \section{Conclusions}
 
 
 Primary objectives were:
 \begin{enumerate}
+    \item In fisheries unlike other fields we try to account for the past but not for the future. Here we propose a way to assess model predictive performance and to account for alternative models within a common diagnostic framework.  
     \item Unifying platform for evaluating across models
     \item Advantage of MASE : What are the new properties of this stat
-    \item In fisheries unlike other fields we try to account for the past but not for the future. Here we propose a way to assess model predictive performance and to account for alternative models within a common diagnostic framework.
 \end{enumerate}
 
 
+\bibliography{main.bib}
 \bibliographystyle{apalike}
-\bibliography{/home/laurence/Desktop/sea++/xval/manuscripts/peerReview/refs.bib}
 
 \section{Tables}
 
@@ -230,16 +229,6 @@ Primary objectives were:
 \label{fig:tdhat}
 \end{figure*}
 
-
-%\begin{figure*}[htbp]
-%\centering
-%\includegraphics[width=6in]{final-cpue-plot-1.png}
-%\label{fig:cpue}
-%\caption{}
-%\end{figure*}
-
-
-\end{document}
 
 
 \end{document}
