@@ -38,22 +38,40 @@
 \definecolor{coilin}{rgb}{1,0,1}
 
 \title{Is It You or Your Model Talking}
-\author{Laurie Kell, Toshihide Kitakado, Rishi Sharma, ...}
+\author{Laurence Kell, Toshihide Kitakado, Rishi Sharma, Henning Winker, \\ Iago Mosqueira, Dan Fu, Max Cardinale, ...}
 
 \begin{document}
 \maketitle
  
-\section*{Outline}
-
+\section*{Still To Do}
 \begin{itemize}
-    \item The provision of fisheries management advice requires the assessment of stock status relative to reference points, the prediction of the response of a stock to management, and checking that predictions are consistent with reality (Holt pers com.)    
-    \item Often when conducting a stock assessment multiple models with different structures and datasets, are used to explore uncertainty. This means that it is difficult to compare models using conventional metrics such as AIC. The use of metrics based on prediction skill allows different data components and model to be compared in order to explore data conflicts and potential model misspecification. %The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead we wish to predict. 
-    \item Retrospective analysis is commonly used to evaluate the stability of stock assessment estimates, however, stability can be at the expense of prediction skill, i.e. by using shrinkage. We therefore predict forward the retrospective analyses and then compare model predictions with historical estimates.The absence of retropective patterns, however, while reassuring is not sufficient alone as it is not possible to validate models based on model outputs. We therefore conduct model free hindcasts to compare observations with model estimates. 
-    \item  We  compare SS, SS-ASPM, and Jabba assessments for Indian Ocean yellowfin tuna  using multiple metrics, make recommendations for benchmarking of stock assessments and discuss the consequences for MSE, i.e. weighting of OMs and developing OEMs.    
-    %\item How to expand the hindcast to include a jackknife to estimate prediction residuals, and perform the hindcast by series.
+   \item Finalise big picture, i.e review aims, structure and conclusions.
+   \item Review sections in include files, make sure the text is complete, not redundant,  and fits into the overall text.
+   \item Finalise results and only add tables if they help discussion.
+   \item Discussion based on elements that are in the outline.
+   \item Mention process error \& recruitment patterns then do in Surplus Production paper  
+   \item Get Max to review and submit to IJMS by June 30th
 \end{itemize}
 
+ \section*{Outline}
+\begin{itemize}
+    \item The Precautionary Approach requires the development of advice that is robust to uncertainty. Therefore when conducting stock assessments often multiple models with different structures and datasets, are used to explore uncertainty. This means that it is difficult to compare models using conventional metrics such as AIC. 
+    
+    \item The provision of fisheries management advice requires the assessment of stock status relative to reference points, the prediction of the response of a stock to management, and checking that predictions are consistent with reality (Holt pers com.) 
+    
+    \item  We  therefore compare SS, SS-ASPM, and Jabba assessments for Indian Ocean yellowfin tuna  using multiple metrics, and discuss hypothesis testing, model selection and model validation. We make recommendations for the bench-marking of stock assessment methods and discuss the consequences for MSE. In particular weighting of alternative Operating Models, modelling process error, and the development of Observation Error Models.    
+  
+    \item The use of metrics based on prediction skill allows different data components and model to be compared in order to explore data conflicts and potential model misspecification. The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead predictions are required. 
+    
+    \item Retrospective analysis is commonly used to evaluate the stability of stock assessment estimates (e.g. SSB and F). Stability is measured using relative error (RE), a measure of bias. A reduction in RE and mean squared error (MSE, a measure of variance) can be achieved by shrinking terminal estimates towards recent historical values. The use of model based quantities, however, means that the actual bias can not be quantified.  
+    
+   \item We therefore predict forward the retrospective analyses and compare model predictions with historical estimates.The absence of retrospective patterns, however, while reassuring is not sufficient as it is not possible to validate models based on model outputs. We therefore conduct model free hindcasts to compare observations with model estimates. 
+\end{itemize}
+
+\newpage
 \tableofcontents 
+
+
 
 \newpage    
 \begin{abstract}
@@ -64,95 +82,107 @@
 \newpage
 \section{Introduction}
 
-In stock assessment most goodness of fit diagnostic are based on residuals obtained from fits to historical observations. To provide fisheries management advice, however, requires predicting the response of a stock to management and checking that the predictions are consistent with reality (pers. com. Sidney Holt). The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead we wish to predict. Validation examines if a model should be modified or extended and is complementary to model selection and hypothesis testing. Model selection searches for the most suitable model within a family, whilst hypothesis testing examines if the model structure can be reduced.
+To provide fisheries management advice requires predicting the response of a stock to management and checking that the predictions are consistent with reality (pers. com. Sidney Holt). The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead we wish to predict. In stock assessment most goodness of fit diagnostic are either on residuals or retrospective analysis obtained from fits to historical observations. 
 
-Model validation is important in many fields, e.g. in energy and climate models, as it increases confidence in the outputs of a model and leads to an increase in trust amongst the public, stake and asset-holders and policy makers. For models to be valid they must satisfy four prerequisites \cite{hodges1992you}, the situation being modelled must be observable and measurable, it must be possible to collect sufficient data, exhibit constancy of structure in time, and exhibit constancy across variations in conditions not specified in the model. The first two prerequisites should be straight forward, but many stock assessments depend on fisheries dependent data rather than scientific observation. For example highly migratory stocks fished in areas beyond national jurisdiction (ABNJ). Prerequisite 3 ensures that the model has predictive skill for the same conditions under which the validation tests were conducted. Prerequisite 4 ensures that the model will still be valid for conditions that differ from those in the validation tests, i.e. can be used to set robust management advice. 
+Model validation is important in many fields, e.g. in energy and climate models, as it increases confidence in the outputs of a model and leads to an increase in trust amongst the public, stake and asset-holders and policy makers \citep{kell2019optimising}. For models to be valid they must satisfy four prerequisites \cite{hodges1992you}, the situation being modelled must be observable and measurable, it must be possible to collect sufficient data, exhibit constancy of structure in time, and exhibit constancy across variations in conditions not specified in the model. The first two prerequisites should be straight forward, but many stock assessments depend on fisheries dependent data rather than observation. For example highly migratory stocks fished in areas beyond national jurisdiction (ABNJ). Prerequisite 3 ensures that the model has predictive skill for the same conditions under which the validation tests were conducted. Prerequisite 4 ensures that the model will still be valid for conditions that differ from those in the validation tests, i.e. can be used to set robust management advice. 
 
-To explore the robustness of advice to uncertainty requires different model structures to be condition on alternative and potentially conflicting datasets. In such cases model selection criteria such as AIC, however, cannot be applied. The first prerequisite means it is not possible to validate a model, using derived quantities, such as SSB and F. The key concept in this case is prediction skill, defined as any measure of accuracy of a forecasted value to the actual (i.e. observed) value that is not known by the model \citep{glickman2000glossary}. Therefore  An alternative is to use model-free hindcasting, a form of crossvalidation where observations are compared to their predicted values.
-
-To illustrate the utility of hindcasting we develop a case study based on bigeye and yellowfin tuna stocks in the Indian, Atlantic and Eastern Pacific Oceans, and four assessment methods, SS, SS-ASPM, Jabba-Select and Jabba. 
+Validation examines if a model should be modified or extended and is complementary to model selection and hypothesis testing. Model selection searches for the most suitable model within a family, whilst hypothesis testing examines if the model structure can be reduced.
 
 \section{Material and Methods}
 
-\cite{kell2016xval} proposed a model-free hindcasting using crossvalidation where observations (e.g. CPUE) are compared to their predicted future values. The hindcasting algorithm is similar to that used in retrospective analysis \citep{hurtado2014looking}, which involves sequentially removing  observations from the terminal year (peels), fitting the model to the truncated series, and then comparing the difference between model estimates from the truncated time-series to those estimated using the full time series. In a model-free hindcast an additional step is included, i.e. projecting over the missing years and then cross-validating these forecasts against observations to assess the model’s prediction skill.
+To explore the robustness of advice to uncertainty requires different model structures to be condition on alternative and potentially conflicting datasets. %In such cases, however, model selection criteria such as AIC, cannot be applied. 
+Retrospective analysis is commonly used to evaluate the stability of stock assessment estimates from alternative models. Observations are sequentially removed from the terminal year, the model is then refitted to the truncated series and the difference between between estimates from the full and truncated time-series compared using the relative error (RE, a measure of bias). The use of model based quantities, however, means that bias can not actually be quantified. A reduction in both RE and mean squared error (MSE, a measure of variance) can be achieved by shrinking terminal estimates towards recent historical values, at the expense of prediction skill. The absence of retrospective patterns, therefore, while reassuring is not sufficient for model validation.
+
+We extend traditional retrospective analysis by adding the additional step of projecting over truncated years. We then conduct a model-free hindcast \cite{kell2016xval} to estimate prediction skill, where prediction skill is defined as any measure of accuracy of a forecasted value to the actual (i.e. observed) value that is not known by the model \citep{glickman2000glossary}. 
+
+The hindcasting algorithm is similar to that used in retrospective analysis \citep{hurtado2014looking}, which involves sequentially removing  observations from the terminal year (peels), fitting the model to the truncated series, and then comparing the difference between model estimates from the truncated time-series to those estimated using the full time series. In a model free hindcast model estimates are compared to observations 
+
+We do this for a case study based on Indian Ocean yellowfin tuna and three assessment methods, with different model structure.  
 
 \subsection{Assessment Methods}
+\input{assess.tex}
 
-Case study based on Indian Ocean yellowfin tuna stocks and four assessment methods, SS, SS-ASPM, Jabba-Select and Jabba. 
+\subsection{Materials}
+\input{material.tex}
 
-\begin{verbatim}\input{assess.tex}\end{verbatim}
+\subsection{Validation}
+\subsubsection{Retrospective Analysis}
+\input{retro.tex}
 
-\subsection{Procedure}
+\subsubsection{Hindcast}
+\input{hindcast.tex}
 
 \subsubsection{Residuals}
+\input{residuals.tex}
 
-%\input{residuals.tex}
+\subsubsection{Prediction Skill}
+\input{prediction.tex}
 
-\subsubsection{Retrospective}
-
-%In a retrospective analysis a model is fitted to increasing periods of data to identify systematic inconsistencies \citep{Mohn1999retrospective}.
-
-%\input{retro.tex}
-
-\subsubsection{Retrospective with Projection}
-#When conducting projections to provide managers with advice,such as a total allowable catch (TAC), the short term is of primary importance as usually the immediate consequences of management advice is a major concern of stakeholders \citep{fricker2013three}. Therefore we also conduct projections for 3 years as part of the retrospective analysis.#
-
-
-\subsection{Hindcast}
-
-%\input{hindcast.tex}
-
-\subsubsection{Summary Metrics}
-
-%\input{metrics.tex}
+\subsection{Summary Metrics}
+\input{metrics_TK.tex}
 
 \section{Results}
 
-Figure~\ref{fig:map} shows the stock distribution shows the stock structure assumed in the SS assessments.
+The retrospective analysis for one and three step ahead prediction is shown in figure \ref{fig:retro} for $SSB:B_{MSY}$ and $F:F_{MSY}$ (SSB & F for SS and ASPM and exploitable biomass and harvest rate for JABBA). Even for a one year ahead prediction, the base case and JABBA assessments start to diverge from the assessment that included all years. The pattern gets worse for the three year projections. Table \tref{tab:retro} shows the estimates of Monh's $\rho$, RMSE, and MASE. This allows bias, variance and model-based prediction skill to be compared.
 
-The first step was to conduct a retrospective analysis and the estimates of stick biomass (SSB for ASPM and SS, and biomass for JABBA) and F (instantaneous for ASPM and SS, and rate for JABBA) are shown in Figure~\ref{fig:retro}. The terminal estimates were then project forward for three years assuming the reported catches and the estimated recruitment from the model with all years included  (Figure~\ref{fig:predictions}). ASPM "predicted" values are close to those of the assessment that includes all years. For SS, however, there is a large overestimation of future biomass, and a underestimate of F . For JABBA the strongest retrospective pattern is seen in F, which is underestimated in the predictions.
+ASPM values are relatively unbiased with low variance and good prediction skill. For SS, however, there is over and underestimation of SSB and F respectively. For JABBA a strong negative retrospective pattern is seen in F, a negative bias is also seen in biomass.
 
-The residuals from the model fits are shown in Figure~\ref{fig:runs}, the backgroud indicates whether they passed (green) or failed (red) the runs tests. 
+The residuals from the model fits to the indices of abundance are shown in Figure~\ref{fig:runs}, the background indicates whether they passed (green) or failed (red) the runs tests. In general the CPUE for Area 2 and Area 4 perform poorly for both the base case and the JABBA models. 1st quarter indices also perform poorly compared to the other quarters (quarter 3 for CPUE 1 is also poorly predicted). As indicated the green shows that the runs test passes for most of the ASPM model data, and a lot more red indicators exist for the other two models.  
 
-The results from the model-free  Hindcast with one year ahead predictions are shown in Figure~\ref{fig:hy1} and from the three year ahead predictions in Figure~\ref{fig:hy3}.
+The results from the model-free hindcasts are shown in Figure~\ref{fig:hy} for (one and three year ahead predictions respectively. CPUE's from area 2 and 4 perform poorly as in the previous figures for the base case and JABBA. The ASPM also performs poorly for Area 2 in the 3 year hindcast projections. Model fits for 3 years ahead for both JABBA and the base case perform poorly. Area 2 also fails for ASPM in the 3 year projections. As a bulk of the catch comes from Area 1 and 2, Area 2 index of abundance is important to predict. In addition Area 4 in the eastern part of the Indian Ocean perform poorly with all models in the three year hindcast exercise.   
 
-Figure~\ref{fig:runshat} shoes the predictions residuals, and the fits are summarised in Figures~\ref{fig:td} and Figure~\ref{fig:tdhat} in the form of Taylor diagrams
+The fits are summarised in Figures~\ref{fig:td} in the form of Taylor diagrams. 
 
-\subsection*{Summary}
+%In the one year hindcast, all models other than area 2 indices had a high RMSE, high sigma, and low correlation (left panel). Other models seem to have a high overlap (lower left cluster indicating a high correlation, and low RMSE and low sigma). As we go to a three year hindcast, all models seem to perform poorly, other than the ASPM. Even, the ASPM, appears to do poorly with the 2nd CPUE. the correlation gets worse for all models for CPUE 1 & 2, though the RMSE and sigma remains low.  
+
+Table \ref{tab:retro} and  \ref{tab:proj} show Mohn's $\rho$ for the retrospective analysis and retrospective with projection, Table \label{tab:rmse} shows the values of RMSE and \label{tab:mase} MASE for the model free hindcast.
 
 \begin{description}
-    \item{Retrospective analysis and projections for F/FMSY and B/BMSY} show that
+    \item{Retrospective analysis for F/FMSY and B/BMSY}
+  
     \begin{itemize}
-        \item SS projections and hence advice is based upon SS is unreliable.
-        \item Jabba advice is problematic as it appears that even if F<FMSY the stock will decline below BMSY
-        \item ASPM appears consistent
-        \item It therefore appears that the length compositions just add noise, and that area effects are important
-        \item However these is no objective way to choose an assessment based on retrospective analysis as the best model would always be B/MSY = 1 
-        \end{itemize}
-    \item{Model-free cross-validation} confirms the relative performance of the models
+        \item Figure \ref{fig:retro} and Table \ref{tab:retro} summarise the retrospective analysis, taking 0.2 and -0.15 as the cut off points for accepting an assessment all assessments pass. 
+        \item The strongest retrospective patterns are seen for SS, where F is negatively biased, and although the value of Mohn's $\rho$ is low for SSB a strong pattern is seen with underestimates followed by overestimates. 
+        \item Although recent Jabba estimates are unbiased historical estimates of F and Biomass are negatively biased.
+        \item Jabba estimates are problematic as it appears that even if F<FMSY the stock will decline below BMSY
+        \item ASPM estimates appears to have little bias
+    \end{itemize}
+    \item{Retrospective analysis and projections for F/FMSY and B/BMSY} 
     \begin{itemize}
+      \item Figure \ref{fig:proj} and Table \ref{tab:proj} summarise the retrospective analysis combinded with a three prediction, again taking the cut off as 0.2 to -0.15, both SS and Jabba fail.
+      \item ASPM appears not to show patterns in the projections
         \item ASPM performs best
         \item Survey 2 performs poorly across all models
+        \item It appears that the length compositions add noise (SS), and that area effects (JABBA) are important.
+        \item However these is no objective way to choose an assessment based on retrospective analysis as the best model would always be B/MSY = 1 
    \end{itemize}
-   \item{Make case for why we need MASE and why this new methodology is important}
+   \item{Residuals}
     \begin{itemize}
-        \item Tabulate Metrics
-        \item Compare MASE to other measures and use Taylor Diagrams to explain differences
+        \item Figure \ref{fig:runs} summarises the residuals, in the form of runs test; green backgrounds denote a pass. Only two indices pass for all models Survey 1 quarter 1 and Survey 3 quarter 4
+        \item Over half of the indices fail for Jabba, half for SS while for ASPM the majority pass. This indicates strong data conflicts while  failure of the runs test may explain the retrospective patterns.
    \end{itemize}
-
-\end{description}
+     \item{Model-free cross-validation} confirms the relative performance of the models
+    \begin{itemize}
+        \item Figures \ref{fig:hy1} and \ref{fig:hy3} shows that SS performs poorly, possibly because length compositions can only be explained by variations in year-class strengths, and projections predict large increase in biomass.
+        \item RMSE is difficult to interpret (Table \ref{tab:rmse}), MASE easier (Table \ref{tab:mase}).
+        \item Taylor diagram, shows that there is a big difference between model residuals and prediction residuals. Figure \ref{fig:td} summarises the historical model fits survey 4 performs the best, i.e. has high correlation for all models, while survey 3 performs poorly.
+        \item However, when three step ahead projections are considered (Figure \ref{fig:tdhat} ) survey 4 perform the best for ASPM, although the correlation is reduced. SS has high RMSE, poor correlation and high  variance.  
+   \end{itemize}
+ \end{description}
 
 \section{Discussion}
+\input{discussion.tex}
 
-\begin{verbatim}\input{discussion.tex}\end{verbatim}
 \section{Conclusions}
-
 
 Primary objectives were:
 \begin{enumerate}
     \item In fisheries unlike other fields we try to account for the past but not for the future. Here we propose a way to assess model predictive performance and to account for alternative models within a common diagnostic framework.  
     \item Unifying platform for evaluating across models
     \item Advantage of MASE : What are the new properties of this stat
+    \item Consequences for stock assessment benchmarking
+    \item Consequences for uncertainty, risk and MSE.
+    \item Next steps
 \end{enumerate}
 
 
@@ -161,29 +191,146 @@ Primary objectives were:
 
 \section{Tables}
 
+\iffalse
+\begin{table}[ht]
+\caption{Mohn's $\rho$ for retrospective analysis.}  
+\begin{center}
+\label{tab:retro-}
+\begin{tabular}{|cccc|}
+\hline
+	\tiny Method	& {\tiny $\Quantity$}  & {\tiny Retrospective} & {\tiny Projection} \\ 
+\hline\hline
+{\tiny SSB          } & {\tiny SS} 	     & {\tiny   NA}  & {\tiny NA}      \\
+{\tiny SSB          } & {\tiny ASPM} 	 & {\tiny   NA}  & {\tiny NA}      \\
+{\tiny SSB          } & {\tiny JABBA} 	 & {\tiny   NA}  & {\tiny NA}      \\
+{\tiny F            } & {\tiny SS} 	     & {\tiny   NA}  & {\tiny NA}      \\
+{\tiny F            } & {\tiny ASPM} 	 & {\tiny   NA}  & {\tiny NA}      \\
+{\tiny Harvest Rate } & {\tiny JABBA} 	 & {\tiny   NA}  & {\tiny NA}      \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\fi
+
+\begin{table}[ht]
+\caption{Mohn's $\rho$ for retrospective analysis.}  
+\label{tab:retro}
+\centering
+\begin{tabular}{rllr}
+  \hline
+ & run & variable & V1 \\ 
+  \hline
+1 & aspm & stock & -0.03 \\ 
+  2 & aspm & harvest & 0.03 \\ 
+  3 & base & stock & 0.04 \\ 
+  4 & base & harvest & -0.15 \\ 
+  5 & jabba & stock & -0.09 \\ 
+  6 & jabba & harvest & -0.09 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\caption{Mohn's $\rho$ for retrospective analysis with three year projection.}  
+\label{tab:proj}
+\centering
+\begin{tabular}{rllr}
+  \hline
+ & run & variable & V1 \\ 
+  \hline
+1 & aspm & stock & -0.09 \\ 
+  2 & aspm & harvest & 0.08 \\ 
+  3 & base & stock & 0.32 \\ 
+  4 & base & harvest & -0.24 \\ 
+  5 & jabba & stock & -0.21 \\ 
+  6 & jabba & harvest & -0.28 \\
+   \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[ht]
+\caption{RMSE.}  
+\label{tab:rmse}
+\centering
+\begin{tabular}{rlrrrr}
+  \hline
+ & name & quarter & SS & ASPM & JABBA \\ 
+  \hline
+  1 & CPUE 1 & 1.00 & 0.37 & 0.24 & 0.25 \\ 
+  2 & CPUE 1 & 2.00 & 0.28 & 0.24 & 0.26 \\ 
+  3 & CPUE 1 & 3.00 & 0.47 & 0.45 & 0.29 \\ 
+  4 & CPUE 1 & 4.00 & 0.29 & 0.14 & 0.24 \\ 
+  5 & CPUE 2 & 1.00 & 0.36 & 0.34 & 0.43 \\ 
+  6 & CPUE 2 & 2.00 & 0.64 & 0.62 & 0.50 \\ 
+  7 & CPUE 2 & 3.00 & 0.30 & 0.29 & 0.23 \\ 
+  8 & CPUE 2 & 4.00 & 0.42 & 0.42 & 0.38 \\ 
+  9 & CPUE 3 & 1.00 & 0.28 & 0.19 & 0.21 \\ 
+  10 & CPUE 3 & 2.00 & 0.34 & 0.31 & 0.38 \\ 
+  11 & CPUE 3 & 3.00 & 0.22 & 0.22 & 0.30 \\ 
+  12 & CPUE 3 & 4.00 & 0.37 & 0.36 & 0.40 \\ 
+  13 & CPUE 4 & 1.00 & 0.37 & 0.15 & 0.41 \\ 
+  14 & CPUE 4 & 2.00 & 0.45 & 0.30 & 0.53 \\ 
+  15 & CPUE 4 & 3.00 & 0.49 & 0.25 & 0.43 \\ 
+  16 & CPUE 4 & 4.00 & 0.47 & 0.18 & 0.48 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\caption{MASE.}  
+\label{tab:mase}
+\centering
+\begin{tabular}{rlrrrr}
+  \hline
+ & name & quarter & SS & ASPM & JABBA \\ 
+  \hline
+  1 & CPUE 1 & 1.00 & 0.94 & 0.53 & 0.77 \\ 
+  2 & CPUE 1 & 2.00 & 0.63 & 0.67 & 0.96 \\ 
+  3 & CPUE 1 & 3.00 & 1.23 & 1.17 & 0.85 \\ 
+  4 & CPUE 1 & 4.00 & 0.82 & 0.45 & 0.74 \\ 
+  5 & CPUE 2 & 1.00 & 1.52 & 1.73 & 2.41 \\ 
+  6 & CPUE 2 & 2.00 & 2.11 & 2.10 & 1.56 \\ 
+  7 & CPUE 2 & 3.00 & 0.95 & 0.82 & 0.83 \\ 
+  8 & CPUE 2 & 4.00 & 1.33 & 1.65 & 1.26 \\ 
+  9 & CPUE 3 & 1.00 & 0.86 & 0.57 & 0.88 \\ 
+  10 & CPUE 3 & 2.00 & 0.92 & 0.81 & 0.92 \\ 
+  11 & CPUE 3 & 3.00 & 0.93 & 0.76 & 1.22 \\ 
+  12 & CPUE 3 & 4.00 & 0.85 & 0.91 & 0.99 \\ 
+  13 & CPUE 4 & 1.00 & 2.10 & 0.76 & 3.00 \\ 
+  14 & CPUE 4 & 2.00 & 0.91 & 0.63 & 1.14 \\ 
+  15 & CPUE 4 & 3.00 & 2.07 & 0.93 & 1.92 \\ 
+  16 & CPUE 4 & 4.00 & 3.29 & 1.09 & 3.90 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\clearpage
 \section{Figures}
+
 
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=6in]{map.png}
-\caption{Stock distribution.}
+\caption{Spatial stratification of the Indian Ocean for the four region assessment model (R1a and R1b were treated as one model region but were retained for the fleet definition). The black arrows represent the configuration of the movement parameterization.  Density contours represent of the dispersal of tag releases (red) and subsequent recaptures from Indian Ocean Regional tuna tagging programme. Green circles represent the distribution of catches from the longline fishery aggregated by 5 longitude * 5 latitude for 1980 – 2017 (max. = 133 770 t).}
 \label{fig:map}
 \end{figure*}
 
 \begin{figure*}[htbp]
 \centering
-\includegraphics[width=6in]{final-retro-1.png}
-\caption{Retrospective analysis for the three models, points indicate the terminal years, and the think line the assessment using all the data.}
-\label{fig:retro}
+\includegraphics[width=6in]{ll.png}
+\caption{Regional longline CPUE indices included in the 2018 stock assessment. The difference in scales represents the relative distribtuion of longline vulnearable biomass amonst regions.}
+\label{fig:ll}
 \end{figure*}
 
 \begin{figure*}[htbp]
 \centering
-\includegraphics[width=6in]{final-retro3-1.png}
-\caption{Retrospective analysis with three year predictions for the three models, points indicate the terminal years, and the think line the assessment using all the data.}
-\label{fig:predictions}
+\includegraphics[width=6in]{final-retro-all-1.png}
+\caption{Retrospective analysis for the three models, points indicate the terminal years, and the think line the assessment using all the data.}
+\label{fig:retro}
 \end{figure*}
-
 
 \begin{figure*}[htbp]
 \centering
@@ -194,40 +341,25 @@ Primary objectives were:
 
 \begin{figure*}[htbp]
 \centering
-\includegraphics[width=6in]{final-hy-plot-1.png}
-\caption{Hindcast with one year ahead predictions, red dots are the observed CPUE values and lines are the fits with terminal hincast year indicated by a point.}
-\label{fig:hy1}
+\includegraphics[width=6in]{final-hy-plot-all-1.png}
+\caption{Hindcasts with one and three year ahead predictions, red dots are the observed CPUE values and lines are the fits with terminal hincast year indicated by a point.}
+\label{fig:hy}
 \end{figure*}
+
+%\begin{figure*}[htbp]
+%\centering
+%\includegraphics[width=6in]{final-cpue-prediction-runs-1.png}
+%\caption{Runs tests for one step ahead residuals.}
+%\label{fig:runshat}
+%\end{figure*}
 
 \begin{figure*}[htbp]
 \centering
-\includegraphics[width=6in]{final-hy3-plot-1.png}
-\caption{Hindcast with three year ahead predictions, red dots are the observed CPUE values and lines are the fits with terminal hincast year indicated by a point.}
-\label{fig:hy3}
-\end{figure*}
-
-
-\begin{figure*}[htbp]
-\centering
-\includegraphics[width=6in]{final-cpue-prediction-runs-1.png}
-\caption{Runs tests for one step ahead residuals.}
-\label{fig:runshat}
-\end{figure*}
-
-
-\begin{figure*}[htbp]
-\centering
-\includegraphics[width=6in]{final-taylor-residuals-1.png}
-\caption{Taylor diagram for fits to CPUE summarising the similarity between the observed time series of CPUEs and the predicted relative stock abundance. Each point quantifies how closely predictions match observations, the angle indicates the correlation, the centred root-mean-square error difference between the predicted and observed patterns is proportional to the distance to the point on the x and the contours around this point indicate the RMSE values; the standard deviations of the predictions are proportional to the radial distance from the origin, scaled so the observed pattern has a value of 1. The open circle corresponds to a series which is identical to the reference series. The colours correspond to the model and shape to the survey.)}
+\includegraphics[width=6in]{final-taylor-hy-1-1.png}
+\caption{Taylor diagram for one and three year ahead predictions,  summarising the similarity between the observed time series of CPUEs and the predicted relative stock abundance. Each point quantifies how closely predictions match observations, the angle indicates the correlation, the centred root-mean-square error difference between the predicted and observed patterns is proportional to the distance to the point on the x and the contours around this point indicate the RMSE values; the standard deviations of the predictions are proportional to the radial distance from the origin, scaled so the observed pattern has a value of 1. The open circle corresponds to a series which is identical to the reference series. The colours correspond to the model and shape to the survey.)}
 \label{fig:td}
 \end{figure*}
 
-\begin{figure*}[htbp]
-\centering
-\includegraphics[width=6in]{final-taylor-hy-1.png}
-\caption{Taylor diagram for 3 year ahead predictions, summarising the similarity between the observed time series of CPUEs and the predicted relative stock abundance. Each point quantifies how closely predictions match observations, the angle indicates the correlation, the centred root-mean-square error difference between the predicted and observed patterns is proportional to the distance to the point on the x and the contours around this point indicate the RMSE values; the standard deviations of the predictions are proportional to the radial distance from the origin, scaled so the observed pattern has a value of 1. The open circle corresponds to a series which is identical to the reference series. The colours correspond to the model and shape to the survey.}
-\label{fig:tdhat}
-\end{figure*}
 
 
 
