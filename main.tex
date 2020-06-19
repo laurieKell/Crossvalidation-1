@@ -41,31 +41,52 @@
 \author{Laurence Kell, Toshihide Kitakado, Rishi Sharma, Henning Winker, \\ Iago Mosqueira, Dan Fu, Max Cardinale, ...}
 
 \begin{document}
+
+
+\section*{ICES Background}
+
+Observational data are imperfect, and predictive models based on those data represent simplifications of how some aspect of the world works. Thus, in the fisheries advisory process (e.g., development of catch advice using stock assessments, evaluation of management strategies), it is clear that our analyses are fraught with uncertainty, stemming from uncertainty in the input data (observations) or from the \laurie{structure (degree of simplification and validity of assumptions)} of the methods and models employed. Input uncertainty is easier to measure using standard statistical procedures, and to address through improvements to survey designs, sampling schemes, and statistical methods. \laurie{Structural uncertainties however, are more intangible as they often represent “known unknowns” - i.e., we know there are limitations to the methods and models, but it is difficult to describe and measure them without comprehensive analyses, such as simulation testing or cross-validation}.
+
+With the development of more advanced analytical frameworks that support implementation of  machine learning, artificial intelligence, and ensemble modeling, we invite fisheries scientists to a session to present advances in \laurie{identifying, quantifying and dealing with structural uncertainties in the fisheries science advisory process.}
+
+We invite contributions on the following themes:
+
+\begin{itemize}
+    \item \laurie{Uncertainties throughout the stock assessment and management strategy evaluation process}
+    \item \laurie{Identification and testing of plausible structural hypotheses, and structural uncertainties}
+    \item \laurie{Sensitivity analysis}
+    \item \laurie{Model ensembles (within and between models) see previous \href{ https://www.fisheries.noaa.gov/national/population-assessments/noaa-fisheries-13th-national-stock-assessment-workshop-report-released}{NOAA workshop} }
+    \item \laurie{Gaps and needs for developing ensembles}
+    \item \laurie{Evaluating trade-offs between one versus multiple models}
+    \item \laurie{Combining and communicating results across ensemble members and stakeholders}
+\end{itemize}
+
+
 \maketitle
  
 \section*{Still To Do}
 \begin{itemize}
-   \item Finalise big picture, i.e review aims, structure and conclusions.
    \item Review sections in include files, make sure the text is complete, not redundant,  and fits into the overall text.
-   \item Finalise results and only add tables if they help discussion.
+   \item Finalise results by adding tables if they help.
    \item Discussion based on elements that are in the outline.
    \item Mention process error \& recruitment patterns then do in Surplus Production paper  
-   \item Get Max to review and submit to IJMS by June 30th
+   \item Get Max and Dan to review and submit to IJMS by June 30th
 \end{itemize}
 
  \section*{Outline}
 \begin{itemize}
-    \item The Precautionary Approach requires the development of advice that is robust to uncertainty. Therefore when conducting stock assessments often multiple models with different structures and datasets, are used to explore uncertainty. This means that it is difficult to compare models using conventional metrics such as AIC. 
     
-    \item The provision of fisheries management advice requires the assessment of stock status relative to reference points, the prediction of the response of a stock to management, and checking that predictions are consistent with reality (Holt pers com.) 
+    %\item The provision of fisheries management advice requires the assessment of stock status relative to reference points, the prediction of the response of a stock to management, and checking that predictions are consistent with reality (Holt pers com.) 
     
-    \item  We  therefore compare SS, SS-ASPM, and Jabba assessments for Indian Ocean yellowfin tuna  using multiple metrics, and discuss hypothesis testing, model selection and model validation. We make recommendations for the bench-marking of stock assessment methods and discuss the consequences for MSE. In particular weighting of alternative Operating Models, modelling process error, and the development of Observation Error Models.    
-  
-    \item The use of metrics based on prediction skill allows different data components and model to be compared in order to explore data conflicts and potential model misspecification. The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead predictions are required. 
+    %\item The Precautionary Approach requires the development of advice that is robust to uncertainty. Therefore, often when conducting stock assessments multiple models with different structures and datasets, are used to explore uncertainty. This means, however, that it is difficult to compare models using conventional metrics such as AIC. 
     
-    \item Retrospective analysis is commonly used to evaluate the stability of stock assessment estimates (e.g. SSB and F). Stability is measured using relative error (RE), a measure of bias. A reduction in RE and mean squared error (MSE, a measure of variance) can be achieved by shrinking terminal estimates towards recent historical values. The use of model based quantities, however, means that the actual bias can not be quantified.  
+    \item  We  therefore compare SS, SS-ASPM, and Jabba assessments for Indian Ocean yellowfin tuna  using multiple metrics, and discuss hypothesis testing, model selection and model validation. We make recommendations for the bench-marking of stock assessment methods and discuss the consequences for MSE. In particular weighting of alternative Operating Models, modelling process error, and the development of Observation Error Models.   
+
     
    \item We therefore predict forward the retrospective analyses and compare model predictions with historical estimates.The absence of retrospective patterns, however, while reassuring is not sufficient as it is not possible to validate models based on model outputs. We therefore conduct model free hindcasts to compare observations with model estimates. 
+   
+   \item The use of metrics based on prediction skill allows different data components and model to be compared in order to explore data conflicts and potential model misspecification. The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead predictions are required. 
+    
 \end{itemize}
 
 \newpage
@@ -76,52 +97,62 @@
 \newpage    
 \begin{abstract}
     Evaluating how well the model fits data has been receiving much attention in fisheries science, both in terms of goodness-of-fit and retrospectively. This however merely tells us how well we can describe the past, yet little how well we can predict the future under alternative management actions. In this paper, we revisit the concepts behind hindcasting cross-validation (hcxval) as an important model-free validation tool for predictive modelling. Together with conventional residual diagnostics and retrospective analysis, we apply hcxval to three examples of alternative candidate models using the recent Indian Ocean yellowfin tuna assessment as a case study. 
-    These models comprise the 2019 spatially structured reference model implemented in Stock Synthesis (ss-ref), a deterministic age-structured production model (ss-aspm) of ss-ref and a simplied spatially aggregated stochastic surplus production model implemented in the 'JABBA' package. To assess prediction skill, we computed the Mean-Absolute-Scaled-Error (MASE), which, unlike e.g. Aikaike's Information Criterion, enables to compare across different models fitted different data. The best MASE values (MASE < 1) were determined for ss-asem, which indicates that recruitment deviations in ss-ref were poorly estimated due to no or limited information in the 'noisy' length composition data. By contrast, the area effects retained in ss-aspm best explained its superior prediction skill compared to the spatially aggregated jabba model. We suggest that one-step ahead predictions are efficient for detecting overfitting and for model validation in general, but for future quota advice the forecast horizon should preferably at least match the assessment interval to ultimately increase confidence in the model-based scientific advice by stake holder and managers and policy makers.
+    These models comprise the 2019 spatially structured reference model implemented in Stock Synthesis (ss-ref), a deterministic age-structured production model (ss-aspm) of ss-ref and a simplied spatially aggregated stochastic surplus production model implemented in the 'JABBA' package. To assess prediction skill, we computed the Mean-Absolute-Scaled-Error (MASE), which, unlike e.g. Aikaike's Information Criterion, enables to compare across different models fitted to different data. The best MASE values (MASE < 1) were determined for ss-asem, which indicates that recruitment deviations in ss-ref were poorly estimated due to no or limited information in the 'noisy' length composition data. By contrast, the area effects retained in ss-aspm best explained its superior prediction skill compared to the spatially aggregated jabba model. We suggest that one-step ahead predictions are efficient for detecting overfitting and for model validation in general, but for future quota advice the forecast horizon should preferably at least match the assessment interval to ultimately increase confidence in the model-based scientific advice by stakeholders, managers and policy makers.
 \end{abstract}
 
 \newpage
-\section{Introduction}
+\section{Introduction: Laurie + Toshi}
 
-To provide fisheries management advice requires predicting the response of a stock to management and checking that the predictions are consistent with reality (pers. com. Sidney Holt). The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead we wish to predict. In stock assessment most goodness of fit diagnostic are either on residuals or retrospective analysis obtained from fits to historical observations. 
+To provide fisheries management advice requires predicting the response of a stock to management and checking that the predictions are consistent with reality (pers. com. Sidney Holt). The accuracy and precision of predictions depend on the validity of the model, the information in the data, and how far ahead we wish to predict. The Precautionary Approach requires the development of advice that is robust to uncertainty. Therefore, when conducting stock assessments multiple models with different structures and datasets, are often used to explore uncertainty. 
 
-Model validation is important in many fields, e.g. in energy and climate models, as it increases confidence in the outputs of a model and leads to an increase in trust amongst the public, stake and asset-holders and policy makers \citep{kell2019optimising}. For models to be valid they must satisfy four prerequisites \cite{hodges1992you}, the situation being modelled must be observable and measurable, it must be possible to collect sufficient data, exhibit constancy of structure in time, and exhibit constancy across variations in conditions not specified in the model. The first two prerequisites should be straight forward, but many stock assessments depend on fisheries dependent data rather than observation. For example highly migratory stocks fished in areas beyond national jurisdiction (ABNJ). Prerequisite 3 ensures that the model has predictive skill for the same conditions under which the validation tests were conducted. Prerequisite 4 ensures that the model will still be valid for conditions that differ from those in the validation tests, i.e. can be used to set robust management advice. 
+In stock assessment, however, most goodness of fit diagnostic are either based on model residuals or retrospective analysis obtained from fits to historical observations. While the use of different modelling frameworks with different data needs means that it is difficult to select models using conventional metrics such as AIC.  As well as model selection which searches for the most suitable model within a family, and hypothesis testing which examines if the model structure can be reduced, model validation is also required. Validation examines if a model should be modified or extended and is complementary to model selection and hypothesis testing.
 
-Validation examines if a model should be modified or extended and is complementary to model selection and hypothesis testing. Model selection searches for the most suitable model within a family, whilst hypothesis testing examines if the model structure can be reduced.
+Model validation is important in many fields, e.g. in energy and climate models, as it increases confidence in the outputs of a model and leads to an increase in trust amongst the public, stake and asset-holders and policy makers \citep{kell2019optimising}. For models to be valid they must satisfy four prerequisites \cite{hodges1992you}: the situation being modelled must (i) be observable and measurable, (ii) it must be possible to collect sufficient data informative about it, (iii) exhibit constancy of structure in time, and (iv) exhibit constancy across variations in conditions not specified in the model. The first two prerequisites should be straight forward, but many stock assessments depend on fisheries dependent data rather than observation. For example highly migratory stocks fished in areas beyond national jurisdiction (ABNJ) commonly employ indices of abundance based on commercial catch rates. Prerequisite iii ensures that the model has predictive skill for the same conditions under which the validation tests were conducted, while prerequisite iv ensures that the model will still be valid for conditions that differ from those in the validation tests, i.e. can be used to set robust management advice. 
 
+ We  therefore compare SS, SS-ASPM, and Jabba assessments for Indian Ocean yellowfin tuna  using multiple metrics, in order to help improve bench-marking of stock assessment methods.
+ 
+    
 \section{Material and Methods}
 
-To explore the robustness of advice to uncertainty requires different model structures to be condition on alternative and potentially conflicting datasets. %In such cases, however, model selection criteria such as AIC, cannot be applied. 
-Retrospective analysis is commonly used to evaluate the stability of stock assessment estimates from alternative models. Observations are sequentially removed from the terminal year, the model is then refitted to the truncated series and the difference between between estimates from the full and truncated time-series compared using the relative error (RE, a measure of bias). The use of model based quantities, however, means that bias can not actually be quantified. A reduction in both RE and mean squared error (MSE, a measure of variance) can be achieved by shrinking terminal estimates towards recent historical values, at the expense of prediction skill. The absence of retrospective patterns, therefore, while reassuring is not sufficient for model validation.
+Retrospective analysis  \citep{hurtado2014looking} is commonly used to evaluate the stability of stock assessment estimates from alternative models. Observations are sequentially removed from the terminal year, the model is then refitted to the truncated series and the difference between between estimates from the full and truncated time-series compared using the relative error (RE, a measure of bias). The use of model based quantities, however, means that bias can not actually be quantified. A reduction in both RE and mean squared error (MSE, a measure of variance) can be achieved by shrinking terminal estimates towards recent historical values, at the expense of prediction skill. The absence of retrospective patterns, therefore, while reassuring is not sufficient for model validation.
 
-We extend traditional retrospective analysis by adding the additional step of projecting over truncated years. We then conduct a model-free hindcast \cite{kell2016xval} to estimate prediction skill, where prediction skill is defined as any measure of accuracy of a forecasted value to the actual (i.e. observed) value that is not known by the model \citep{glickman2000glossary}. 
+Therefore to compare the different family of models we extend retrospective analysis to conduct a hindcast. Where a hindcast or a backtest is a way of testing a model based on past events by comparing outputs match with known results. We therefore extend retrospective analysis by adding an additional step of projecting over the truncated years. We then conduct a model-free hindcast \cite{kell2016xval} to estimate prediction skill, defined as any measure of accuracy of a forecasted value to the actual (i.e. observed) value that is not known by the model \citep{glickman2000glossary}. 
 
-The hindcasting algorithm is similar to that used in retrospective analysis \citep{hurtado2014looking}, which involves sequentially removing  observations from the terminal year (peels), fitting the model to the truncated series, and then comparing the difference between model estimates from the truncated time-series to those estimated using the full time series. In a model free hindcast model estimates are compared to observations 
-
-We do this for a case study based on Indian Ocean yellowfin tuna and three assessment methods, with different model structure.  
-
-\subsection{Assessment Methods}
+\subsection{Assessment Methods: Rishi}
 \input{assess.tex}
 
-\subsection{Materials}
+\subsection{Materials: Iago}
 \input{material.tex}
 
-\subsection{Validation}
-\subsubsection{Retrospective Analysis}
-\input{retro.tex}
+\subsection{Hindcast: Laurie then Henning}
 
-\subsubsection{Hindcast}
-\input{hindcast.tex}
+Hindcasting like traditional retrospective analysis involves fitting a model using a tailcutting procedure, where data are deleted sequentially for $n$ years, i.e. from the last year $y$ through to $y−n$, the additional step in the hindcast is that then the data from year 1 to $y−n−1$ are used to make predictions of what will happen in years $y−n$ to $y$.
 
-\subsubsection{Residuals}
-\input{residuals.tex}
+\begin{algorithm}[!ht]
+\begin{algorithmic}[1]
 
-\subsubsection{Prediction Skill}
-\input{prediction.tex}
+\State Conduct assessment for all years, i.e. $t=n$
+\For ~ $t$ = n to n-20
+\State Remove all $X_{i,t}$ for $t$ to n
+\State Run model
+\State Estimate $\hat{X}_{i,t}$ to $\hat{X}_{i,n}$ 
+\EndFor
+\caption{Hindcast~\citep{kell2016xval}}
+\label{Hindcast}
+\end{algorithmic}
+\end{algorithm}
 
-\subsection{Summary Metrics}
-\input{metrics_TK.tex}
+Hindcasting can be performed for model based quantities (e.g. SSB and F) or model-free (e.g. observations of CPUE). The former helps check the stability of stock assessment advice, while the later provides an objective way to validate models based on prediction skill and to test for over-fitting. The later is important since analysis of residuals is a common way to determine a model’s goodness-of-fit \citep{Cox1968general}, since  non-random patterns in the residuals may indicate model misspecification, serial correlation in sampling/observation error, or heteroscedasticity. When inspecting residuals, however, there is a danger of hypothesis fishing, i.e. choosing a scenario retrospectively retrospect, while if multiple true hypotheses are tested it is likely that some of them will be rejected. Therefore it is valuable to reserve part of the data for validation, so that a pattern’s significance is not tested on the same data set which suggested the pattern \citep{thygesen2017validation}. For this reason we conduct a model-free hindcast.
 
-\section{Results}
+Since assessment cycles are typically for three years  with advice \citep{fricker2013three} we projected the truncated estimates for 3 years. When conducting the hindcast it is assumed that modelled variables are observable, processes exhibit constancy of structure in time, including those not specified in the model, and that collection of accurate and sufficient data is possible \citep{hodges1992you}.
+
+\subsubsection{Model-Based}
+\input{model-based.tex}
+
+\subsubsection{Model-Free}
+\input{model-free.tex}
+
+\section{Results: Rishi}
 
 The retrospective analysis for one and three step ahead prediction is shown in figure \ref{fig:retro} for $SSB:B_{MSY}$ and $F:F_{MSY}$ (SSB & F for SS and ASPM and exploitable biomass and harvest rate for JABBA). Even for a one year ahead prediction, the base case and JABBA assessments start to diverge from the assessment that included all years. The pattern gets worse for the three year projections. Table \tref{tab:retro} shows the estimates of Monh's $\rho$, RMSE, and MASE. This allows bias, variance and model-based prediction skill to be compared.
 
@@ -129,9 +160,9 @@ ASPM values are relatively unbiased with low variance and good prediction skill.
 
 The residuals from the model fits to the indices of abundance are shown in Figure~\ref{fig:runs}, the background indicates whether they passed (green) or failed (red) the runs tests. In general the CPUE for Area 2 and Area 4 perform poorly for both the base case and the JABBA models. 1st quarter indices also perform poorly compared to the other quarters (quarter 3 for CPUE 1 is also poorly predicted). As indicated the green shows that the runs test passes for most of the ASPM model data, and a lot more red indicators exist for the other two models.  
 
-The results from the model-free hindcasts are shown in Figure~\ref{fig:hy} for (one and three year ahead predictions respectively. CPUE's from area 2 and 4 perform poorly as in the previous figures for the base case and JABBA. The ASPM also performs poorly for Area 2 in the 3 year hindcast projections. Model fits for 3 years ahead for both JABBA and the base case perform poorly. Area 2 also fails for ASPM in the 3 year projections. As a bulk of the catch comes from Area 1 and 2, Area 2 index of abundance is important to predict. In addition Area 4 in the eastern part of the Indian Ocean perform poorly with all models in the three year hindcast exercise.   
+The results from the model-free hindcasts are shown in Figures~\ref{fig:hy} and \ref{fig:hy3} for one and three year ahead predictions respectively. CPUE's from area 2 and 4 perform poorly as in the previous figures for the base case and JABBA. The ASPM also performs poorly for Area 2 in the 3 year hindcast projections. Model fits for 3 years ahead for both JABBA and the base case perform poorly. Area 2 also fails for ASPM in the 3 year projections. As a bulk of the catch comes from Area 1 and 2, Area 2 index of abundance is important to predict. In addition Area 4 in the eastern part of the Indian Ocean perform poorly with all models in the three year hindcast exercise.   
 
-The fits are summarised in Figures~\ref{fig:td} in the form of Taylor diagrams. 
+The fits are summarised in Figures~\ref{fig:td} in the form of Taylor diagrams \citep{taylor2001summarizing}. 
 
 %In the one year hindcast, all models other than area 2 indices had a high RMSE, high sigma, and low correlation (left panel). Other models seem to have a high overlap (lower left cluster indicating a high correlation, and low RMSE and low sigma). As we go to a three year hindcast, all models seem to perform poorly, other than the ASPM. Even, the ASPM, appears to do poorly with the 2nd CPUE. the correlation gets worse for all models for CPUE 1 & 2, though the RMSE and sigma remains low.  
 
@@ -170,10 +201,10 @@ Table \ref{tab:retro} and  \ref{tab:proj} show Mohn's $\rho$ for the retrospecti
    \end{itemize}
  \end{description}
 
-\section{Discussion}
+\section{Discussion: All}
 \input{discussion.tex}
 
-\section{Conclusions}
+\section{Conclusions: All}
 
 Primary objectives were:
 \begin{enumerate}
@@ -185,11 +216,13 @@ Primary objectives were:
     \item Next steps
 \end{enumerate}
 
+\section{Appendix: Summary Metrics}
+\input{metrics_TK.tex}
 
 \bibliography{main.bib}
 \bibliographystyle{apalike}
 
-\section{Tables}
+\section{Tables: Henning}
 
 \iffalse
 \begin{table}[ht]
@@ -220,7 +253,7 @@ Primary objectives were:
   \hline
  & run & variable & V1 \\ 
   \hline
-1 & aspm & stock & -0.03 \\ 
+  1 & aspm & stock & -0.03 \\ 
   2 & aspm & harvest & 0.03 \\ 
   3 & base & stock & 0.04 \\ 
   4 & base & harvest & -0.15 \\ 
@@ -239,7 +272,7 @@ Primary objectives were:
   \hline
  & run & variable & V1 \\ 
   \hline
-1 & aspm & stock & -0.09 \\ 
+  1 & aspm & stock & -0.09 \\ 
   2 & aspm & harvest & 0.08 \\ 
   3 & base & stock & 0.32 \\ 
   4 & base & harvest & -0.24 \\ 
@@ -341,10 +374,18 @@ Primary objectives were:
 
 \begin{figure*}[htbp]
 \centering
-\includegraphics[width=6in]{final-hy-plot-all-1.png}
-\caption{Hindcasts with one and three year ahead predictions, red dots are the observed CPUE values and lines are the fits with terminal hincast year indicated by a point.}
+\includegraphics[width=6in]{final-hy-plot-1.png}
+\caption{Hindcasts for one step ahead predictions, red dots are the observed CPUE values and lines are the fits with terminal hincast year indicated by a point.}
 \label{fig:hy}
 \end{figure*}
+
+\begin{figure*}[htbp]
+\centering
+\includegraphics[width=6in]{final-hy3-plot-1.png}
+\caption{Hindcasts for three step ahead predictions, red dots are the observed CPUE values and lines are the fits with terminal hincast year indicated by a point.}
+\label{fig:hy3}
+\end{figure*}
+
 
 %\begin{figure*}[htbp]
 %\centering
@@ -359,8 +400,6 @@ Primary objectives were:
 \caption{Taylor diagram for one and three year ahead predictions,  summarising the similarity between the observed time series of CPUEs and the predicted relative stock abundance. Each point quantifies how closely predictions match observations, the angle indicates the correlation, the centred root-mean-square error difference between the predicted and observed patterns is proportional to the distance to the point on the x and the contours around this point indicate the RMSE values; the standard deviations of the predictions are proportional to the radial distance from the origin, scaled so the observed pattern has a value of 1. The open circle corresponds to a series which is identical to the reference series. The colours correspond to the model and shape to the survey.)}
 \label{fig:td}
 \end{figure*}
-
-
 
 
 \end{document}
