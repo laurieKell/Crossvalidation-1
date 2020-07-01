@@ -1,11 +1,33 @@
 
-Analysis of residuals is a common way to determine a model’s goodness-of-fit \citep{Cox1968general}, since  non-random patterns in the residuals may indicate model misspecification, serial correlation in sampling/observation error, or heteroscedasticity. 
+\subsection{Hindcast}
 
-When inspecting residuals there is a danger of hypothesis fishing and if multiple true hypotheses are tested it is likely that some of them will be rejected. Therefore it is valuable to reserve part of the data for validation, so that a pattern’s significance is not tested on the same data set which suggested the pattern \citep{thygesen2017validation}. We therefore conduct a model-free hindcast
+Retrospective analysis  \parencite{hurtado2014looking} is commonly used to evaluate the stability of stock assessment estimates from alternative models. Observations are sequentially removed from the terminal year, the model is then refitted to the truncated series and the difference between between estimates from the full and truncated time-series compared using the relative error (RE, a measure of bias). 
 
-When conducting a hindcast it is assumed that modelled variables are observable, processes exhibit constancy of structure in time, including those not specified in the model, and that collection of accurate and sufficient data is possible \citep{hodges1992you}.
+Hindcasting like traditional retrospective analysis involves fitting a model using a tailcutting procedure, where data are deleted sequentially for $n$ years, i.e. from the last year $T$ through to $T−n$, the additional step in the hindcast is that then the data from year 1 to $T - n - 1$ are used to make predictions of what will happen in years $T - n$ to $T$.
 
+Since assessment cycles are typically for three years  with advice \parencite{fricker2013three} we projected the truncated estimates for 3 years. We chose 3 years as that is essentially the time-step between assessments in most tuna Regional Fisheries Management Organisations.
 
-%To conduct a hindcast involves fitting a model using a tail-cutting procedure, where data were deleted from year 2018 through to 1999 sequentially and then the data from year 1950 to the last year in the cut data set were used to make predictions of what will happen inhttps://www.overleaf.com/project/5ca9fed01e2a625dbaeae31f thehttps://www.overleaf.com/project/5ca9fed01e2a625dbaeae31f years that were removed.
+\begin{algorithm}[!ht]
+\begin{algorithmic}[1]
+\State Fit model up to and including terminal year $T$
+\For{$t$ = $T - 3$ to n} 
+\State fit model to data up to time $t$ \For {$i$ = $t$ to $t + 3$} 
+\State Estimate $\hat{y_i}$
+\EndFor
+\EndFor
+\caption{Hindcast}
+\label{Hindcast}
+\end{algorithmic}
+\end{algorithm}
 
-%A problem with retrospective analysis is that model outputs are used and bias is measure%d using RE a measure of variance not bias. For example what if the estimates from the full time series are biased by shrinking estimates towards recent historical values, or by over-fitting to conflicting data?  Furthermore in statistics shrinkage is used to reduce variance at the expense of increasing bias. 
+When conducting the hindcast it is assumed that modelled variables are observable, processes exhibit constancy of structure in time, including those not specified in the model, and that collection of accurate and sufficient data is possible \parencite{hodges1992you}.
+
+\subsubsection{Prediction Skill}
+
+The use of model based quantities means that bias can not actually be quantified. For example a reduction in both relative error (a measure of bias) and mean squared error (a measure of variance) can be achieved by shrinking terminal estimates towards recent historical values, at the expense of prediction skill. The absence of retrospective patterns in model based quantities, therefore, while reassuring is not sufficient for model validation, and model-free validation using prediction residuals should be used as well.
+
+Inspection of residuals is a common way to determine a model’s goodness-of-fit \parencite{cox1968general}, since  non-random patterns in the residuals may indicate model misspecification, serial correlation in sampling/observation error, or heteroscedasticity. When inspecting residuals, however, there is a danger of hypothesis fishing/testing?, i.e. [I read the sentence below a few times but could not make sense of it probably need revising?] choosing a scenario retrospectively retrospect, while if multiple true hypotheses are tested it is likely that some of them will be rejected. Therefore it is valuable to reserve part of the data to test for validation, so that a pattern’s significance is not tested on the same data set which suggested the pattern \parencite{thygesen2017validation}. For this reason we conduct a model-free hindcast to estimate prediction skill.
+
+\subsubsection{Metrics}
+
+\input{metrics.tex}

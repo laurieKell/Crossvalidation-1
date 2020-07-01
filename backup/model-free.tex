@@ -15,13 +15,4 @@ MASE=
 The MASE has the desirable properties of scale invariance, predictable behaviour, symmetry, interpretability and asymptotic normality. Compared to MAPE, which relies on the division by observations for scaling, MASE does not necessarily skew its distribution even when the observed values are close to zero. MASE is also easier to interpret as a score of 0.5 indicates that the model forecasts are twice as accurate as a na\''{i}ve baseline prediction; the model thus has prediction skill.
 \vspace{0.2cm}
 
-The best statistical measure to use depends on the objectives of the analysis and using more than one measure can be helpful in providing insight into the nature of observation and process error structures. Here for the evaluation of models, we use the following metrics: 
-\begin{itemize}
-\item Original Mohn's rho ($\rho$) for checking the retrospective bias \\
-\vspace{-0.3cm}
-\item Modified Mohn's rho for prediction \red{bias and absolute error, which? both might be meaningful though but it becomes noisy...} as checking model-based self-consistency check \\
-\vspace{-0.3cm}
-\item MASE and RMSE for model-free validation with different angles. 
-\end{itemize}
-
 
