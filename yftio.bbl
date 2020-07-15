@@ -1,0 +1,2579 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{akaike1998information}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1be457cdca0bf0b62f4b25b4357f34f4}{%
+           family={Akaike},
+           familyi={A\bibinitperiod},
+           given={Hirotogu},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1be457cdca0bf0b62f4b25b4357f34f4}
+      \strng{fullhash}{1be457cdca0bf0b62f4b25b4357f34f4}
+      \strng{bibnamehash}{1be457cdca0bf0b62f4b25b4357f34f4}
+      \strng{authorbibnamehash}{1be457cdca0bf0b62f4b25b4357f34f4}
+      \strng{authornamehash}{1be457cdca0bf0b62f4b25b4357f34f4}
+      \strng{authorfullhash}{1be457cdca0bf0b62f4b25b4357f34f4}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Selected papers of hirotugu akaike}
+      \field{title}{Information theory and an extension of the maximum likelihood principle}
+      \field{year}{1998}
+      \field{pages}{199\bibrangedash 213}
+      \range{pages}{15}
+    \endentry
+    \entry{arlot2010survey}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f536a5b1bc63890da21d6091897b1cad}{%
+           family={Arlot},
+           familyi={A\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3250ac136af0d1776387e11bb5155201}{%
+           family={Celisse},
+           familyi={C\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The author, under a Creative Commons Attribution License}%
+      }
+      \strng{namehash}{b33b487900337d4a432e6b48003d539f}
+      \strng{fullhash}{d16629c8a6aa4ddac8cc398509b6b3a5}
+      \strng{bibnamehash}{d16629c8a6aa4ddac8cc398509b6b3a5}
+      \strng{authorbibnamehash}{d16629c8a6aa4ddac8cc398509b6b3a5}
+      \strng{authornamehash}{b33b487900337d4a432e6b48003d539f}
+      \strng{authorfullhash}{d16629c8a6aa4ddac8cc398509b6b3a5}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistics surveys}
+      \field{title}{A survey of cross-validation procedures for model selection}
+      \field{volume}{4}
+      \field{year}{2010}
+      \field{pages}{40\bibrangedash 79}
+      \range{pages}{40}
+    \endentry
+    \entry{balmaseda1995decadal}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=59fd938c79e31cdecc461ec8487bd894}{%
+           family={Balmaseda},
+           familyi={B\bibinitperiod},
+           given={Magdalena\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55dee76351d275a9e96b2bb18a8462d7}{%
+           family={Davey},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima K},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e489067995c4c2a76fb7c5e33b834b6}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={David\bibnamedelima LT},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{546ed13df4bf76bf3584664bf322ad42}
+      \strng{fullhash}{2d57221709ca55f4f74adb2e20b2b967}
+      \strng{bibnamehash}{2d57221709ca55f4f74adb2e20b2b967}
+      \strng{authorbibnamehash}{2d57221709ca55f4f74adb2e20b2b967}
+      \strng{authornamehash}{546ed13df4bf76bf3584664bf322ad42}
+      \strng{authorfullhash}{2d57221709ca55f4f74adb2e20b2b967}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Climate}
+      \field{number}{11}
+      \field{title}{Decadal and seasonal dependence of {ENSO} prediction skill}
+      \field{volume}{8}
+      \field{year}{1995}
+      \field{pages}{2705\bibrangedash 2715}
+      \range{pages}{11}
+    \endentry
+    \entry{bjoernstad2004trends}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=afc8cbf368c9428d8e1ba6077b01f7f6}{%
+           family={Bjoernstad},
+           familyi={B\bibinitperiod},
+           given={O.N},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a173348eb17af944c83e0b5381e4de4}{%
+           family={Nisbet},
+           familyi={N\bibinitperiod},
+           given={R.M.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2aee8cae16a9b78720cf0020c96ea6be}{%
+           family={Fromentin},
+           familyi={F\bibinitperiod},
+           given={J-M.},
+           giveni={J\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{dc9ed4351a395ff8631d96f1364084ba}
+      \strng{fullhash}{9030fd118d9207f40cb11c0cda2fa65e}
+      \strng{bibnamehash}{9030fd118d9207f40cb11c0cda2fa65e}
+      \strng{authorbibnamehash}{9030fd118d9207f40cb11c0cda2fa65e}
+      \strng{authornamehash}{dc9ed4351a395ff8631d96f1364084ba}
+      \strng{authorfullhash}{9030fd118d9207f40cb11c0cda2fa65e}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Animal Ecology}
+      \field{number}{6}
+      \field{title}{Trends and cohort resonant effects in age-structured populations}
+      \field{volume}{73}
+      \field{year}{2004}
+      \field{pages}{1157\bibrangedash 1167}
+      \range{pages}{11}
+    \endentry
+    \entry{botsford2014cohort}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0207d3da6d023daaae5e6ded57594c75}{%
+           family={Botsford},
+           familyi={B\bibinitperiod},
+           given={Louis\bibnamedelima W},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41ae4e68561273a6ad7ad417496cf5dc}{%
+           family={Holland},
+           familyi={H\bibinitperiod},
+           given={Matthew\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c3f3ac4b34a70870889442f9d4ffda1}{%
+           family={Field},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima C},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3ef66b2c3dacd04fd85ecf953dbfdf70}{%
+           family={Hastings},
+           familyi={H\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{dbc52794f941f4de1e6e1fb558a2cd37}
+      \strng{fullhash}{fd65a0cefda84e69384d26bfb312ba00}
+      \strng{bibnamehash}{dbc52794f941f4de1e6e1fb558a2cd37}
+      \strng{authorbibnamehash}{dbc52794f941f4de1e6e1fb558a2cd37}
+      \strng{authornamehash}{dbc52794f941f4de1e6e1fb558a2cd37}
+      \strng{authorfullhash}{fd65a0cefda84e69384d26bfb312ba00}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICES Journal of Marine Science: Journal du Conseil}
+      \field{number}{8}
+      \field{title}{Cohort resonance: a significant component of fluctuations in recruitment, egg production, and catch of fished populations}
+      \field{volume}{71}
+      \field{year}{2014}
+      \field{pages}{2158\bibrangedash 2170}
+      \range{pages}{13}
+    \endentry
+    \entry{cadrin2014stock}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9e1b63c0130b02a2d045950bd85e1680}{%
+           family={Cadrin},
+           familyi={C\bibinitperiod},
+           given={Steven\bibnamedelima X},
+           giveni={S\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd072b01ac8fb007e97e6c43d120d463}{%
+           family={Dickey-Collas},
+           familyi={D\bibinithyphendelim C\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ICES/CIEM}%
+      }
+      \strng{namehash}{db1ae6dddb689565db62e9aae04fdd79}
+      \strng{fullhash}{fca495d8c97b8117fa4e93c076943196}
+      \strng{bibnamehash}{fca495d8c97b8117fa4e93c076943196}
+      \strng{authorbibnamehash}{fca495d8c97b8117fa4e93c076943196}
+      \strng{authornamehash}{db1ae6dddb689565db62e9aae04fdd79}
+      \strng{authorfullhash}{fca495d8c97b8117fa4e93c076943196}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICES Journal of Marine Science}
+      \field{number}{1}
+      \field{title}{Stock assessment methods for sustainable fisheries}
+      \field{volume}{72}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+    \endentry
+    \entry{carvalho2017can}{article}{}
+      \name{author}{5}{ul=2}{%
+        {{un=0,uniquepart=base,hash=fcc3509a0e60efd43e0987e8fc7963cd}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Felipe},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=36af575f935d15911008a614e099a74f}{%
+           family={Punt},
+           familyi={P\bibinitperiod},
+           given={Andr{é}\bibnamedelima E},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=e26dc717048fb46ed29ee5b221f38101}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Yi-Jay},
+           giveni={Y\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7dbfa76a6cd9c98b4977ca5fa5914b81}{%
+           family={Maunder},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima N},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f46afa075d6bace7de3f59997c6afc1}{%
+           family={Piner},
+           familyi={P\bibinitperiod},
+           given={Kevin\bibnamedelima R},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3e8032bc547dfeff58f278a587398db0}
+      \strng{fullhash}{983e456e92a068e8c13b66135de17a0e}
+      \strng{bibnamehash}{3e8032bc547dfeff58f278a587398db0}
+      \strng{authorbibnamehash}{3e8032bc547dfeff58f278a587398db0}
+      \strng{authornamehash}{3e8032bc547dfeff58f278a587398db0}
+      \strng{authorfullhash}{983e456e92a068e8c13b66135de17a0e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fisheries Research}
+      \field{title}{Can diagnostic tests help identify model misspecification in integrated stock assessments?}
+      \field{volume}{192}
+      \field{year}{2017}
+      \field{pages}{28\bibrangedash 40}
+      \range{pages}{13}
+    \endentry
+    \entry{carvalho2020cookbook}{article}{}
+      \name{author}{12}{ul=2}{%
+        {{un=0,uniquepart=base,hash=fcc3509a0e60efd43e0987e8fc7963cd}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Felipe},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2ce8e7c01be3006e576f0994a3db0c9}{%
+           family={Winker},
+           familyi={W\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2981af79f1b9879b0f1af55b3450df30}{%
+           family={Courtney},
+           familyi={C\bibinitperiod},
+           given={Dean},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a30fe3149f2644ef7533a73c34f1f87}{%
+           family={Kapur},
+           familyi={K\bibinitperiod},
+           given={Maia},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b0c50111644a8283f0774df8ee9cd941}{%
+           family={Kell},
+           familyi={K\bibinitperiod},
+           given={Laurence},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a1d04d56228b01cb4738605e1c5881f}{%
+           family={Cardinale},
+           familyi={C\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=487f6b4f5cebc081b0c0bd157949668c}{%
+           family={Schirripa},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04da907202f9966157ba5fe27a249f43}{%
+           family={Kitakado},
+           familyi={K\bibinitperiod},
+           given={Toshihide},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=405ac0eb0c5bfca5de063f10f8bc8344}{%
+           family={Ghebrehiwet},
+           familyi={G\bibinitperiod},
+           given={Dawit\bibnamedelima Y.},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f46afa075d6bace7de3f59997c6afc1}{%
+           family={Piner},
+           familyi={P\bibinitperiod},
+           given={Kevin\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7dbfa76a6cd9c98b4977ca5fa5914b81}{%
+           family={Maunder},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima N},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=886b6252a5919c7ad2d565c83dfe9fae}{%
+           family={Methot},
+           familyi={M\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5220ca0d731a6ebaf162e0671eb12d88}
+      \strng{fullhash}{e0aef5143191708d544936e1863c77d8}
+      \strng{bibnamehash}{5220ca0d731a6ebaf162e0671eb12d88}
+      \strng{authorbibnamehash}{5220ca0d731a6ebaf162e0671eb12d88}
+      \strng{authornamehash}{5220ca0d731a6ebaf162e0671eb12d88}
+      \strng{authorfullhash}{e0aef5143191708d544936e1863c77d8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Submitted}
+      \field{number}{xx}
+      \field{title}{A Cookbook for Using Model Diagnostics in Integrated Stock Assessments}
+      \field{volume}{x}
+      \field{year}{2020}
+      \field{pages}{xxx\bibrangedash xxx}
+      \range{pages}{1}
+    \endentry
+    \entry{casanova2009weighting}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1ea29f8c6ced2c2b8e8775215fdf5862}{%
+           family={Casanova},
+           familyi={C\bibinitperiod},
+           given={Sophie},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e6ed7aed7bd6f7402aab2f8ae82c950}{%
+           family={Ahrens},
+           familyi={A\bibinitperiod},
+           given={Bodo},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3777dafbd26644025e3f7358c94ff3e8}
+      \strng{fullhash}{68ef53d16ea43b61ad91c6b4973b5d36}
+      \strng{bibnamehash}{68ef53d16ea43b61ad91c6b4973b5d36}
+      \strng{authorbibnamehash}{68ef53d16ea43b61ad91c6b4973b5d36}
+      \strng{authornamehash}{3777dafbd26644025e3f7358c94ff3e8}
+      \strng{authorfullhash}{68ef53d16ea43b61ad91c6b4973b5d36}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Monthly weather review}
+      \field{number}{11}
+      \field{title}{On the weighting of multimodel ensembles in seasonal and short-range weather forecasting}
+      \field{volume}{137}
+      \field{year}{2009}
+      \field{pages}{3811\bibrangedash 3822}
+      \range{pages}{12}
+    \endentry
+    \entry{cox1968general}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ec0b9ca4f3b98349d98f9f91b1ea21fe}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={David\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25841b61dc16adc7a6e795d055fbfd04}{%
+           family={Snell},
+           familyi={S\bibinitperiod},
+           given={E\bibnamedelima Joyce},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{9fa8464ef612798225892cc8263a642d}
+      \strng{fullhash}{1c9c5ad05ab03cc4c0cdc6c153a7b570}
+      \strng{bibnamehash}{1c9c5ad05ab03cc4c0cdc6c153a7b570}
+      \strng{authorbibnamehash}{1c9c5ad05ab03cc4c0cdc6c153a7b570}
+      \strng{authornamehash}{9fa8464ef612798225892cc8263a642d}
+      \strng{authorfullhash}{1c9c5ad05ab03cc4c0cdc6c153a7b570}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Royal Statistical Society: Series B (Methodological)}
+      \field{number}{2}
+      \field{title}{A general definition of residuals}
+      \field{volume}{30}
+      \field{year}{1968}
+      \field{pages}{248\bibrangedash 265}
+      \range{pages}{18}
+    \endentry
+    \entry{cury2014resolving}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7e731c27ad646bf65a2f8de6dd626ac2}{%
+           family={Cury},
+           familyi={C\bibinitperiod},
+           given={Philippe\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ff88dc7d785b4932126588f5eae78b9}{%
+           family={Fromentin},
+           familyi={F\bibinitperiod},
+           given={Jean-Marc},
+           giveni={J\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6de59da12cd9714b24cb15279eaf4fff}{%
+           family={Figuet},
+           familyi={F\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db3808fb3e7acb431416788363c32485}{%
+           family={Bonhommeau},
+           familyi={B\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Oceanography Society}%
+      }
+      \strng{namehash}{830bcb4055522b6136531f5937e9a28e}
+      \strng{fullhash}{7ba5b18ddeb57d4e92f6fa34d6aab044}
+      \strng{bibnamehash}{830bcb4055522b6136531f5937e9a28e}
+      \strng{authorbibnamehash}{830bcb4055522b6136531f5937e9a28e}
+      \strng{authornamehash}{830bcb4055522b6136531f5937e9a28e}
+      \strng{authorfullhash}{7ba5b18ddeb57d4e92f6fa34d6aab044}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Oceanography}
+      \field{number}{4}
+      \field{title}{Resolving Hjort's Dilemma How Is Recruitment Related to Spawning Stock Biomass in Marine Fish?}
+      \field{volume}{27}
+      \field{year}{2014}
+      \field{pages}{42\bibrangedash 47}
+      \range{pages}{6}
+    \endentry
+    \entry{doubleday1976least}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bbca2484234826ae8e3fa06a3645c311}{%
+           family={Doubleday},
+           familyi={D\bibinitperiod},
+           given={WG},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bbca2484234826ae8e3fa06a3645c311}
+      \strng{fullhash}{bbca2484234826ae8e3fa06a3645c311}
+      \strng{bibnamehash}{bbca2484234826ae8e3fa06a3645c311}
+      \strng{authorbibnamehash}{bbca2484234826ae8e3fa06a3645c311}
+      \strng{authornamehash}{bbca2484234826ae8e3fa06a3645c311}
+      \strng{authorfullhash}{bbca2484234826ae8e3fa06a3645c311}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Int. Comm. Northwest Atl. Fish. Res. Bull}
+      \field{number}{1}
+      \field{title}{A least squares approach to analyzing catch at age data}
+      \field{volume}{12}
+      \field{year}{1976}
+      \field{pages}{69\bibrangedash 81}
+      \range{pages}{13}
+    \endentry
+    \entry{fiorellato2019tt}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4666041f6f5583d27b874185a247d2fc}{%
+           family={Fiorellato},
+           familyi={F\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81c8ae6869a72a9691b43aef051fcbb8}{%
+           family={Pierre},
+           familyi={P\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3d5a2c5ebb526ffcb9d5a74ac193588}{%
+           family={Geehan},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOTC}%
+      }
+      \strng{namehash}{918eecbca4740dafd03176ee982a1206}
+      \strng{fullhash}{11138f166e5ad1377f13ad1dab37eec1}
+      \strng{bibnamehash}{11138f166e5ad1377f13ad1dab37eec1}
+      \strng{authorbibnamehash}{11138f166e5ad1377f13ad1dab37eec1}
+      \strng{authornamehash}{918eecbca4740dafd03176ee982a1206}
+      \strng{authorfullhash}{11138f166e5ad1377f13ad1dab37eec1}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{33}
+      \field{title}{Review of The Statistical Data And Fishery Trends For Tropical Tunas}
+      \field{volume}{IOTC-2019-WPTT21-08}
+      \field{year}{2019}
+    \endentry
+    \entry{fournier1982general}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=56e6722f36e1715da4f49ca833af5991}{%
+           family={Fournier},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d66fcdaac6ed1688d2f92002b51f2a1}{%
+           family={Archibald},
+           familyi={A\bibinitperiod},
+           given={Chris\bibnamedelima P},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {NRC Research Press}%
+      }
+      \strng{namehash}{ddabce7ab3d35f0fed32f81e964b95ff}
+      \strng{fullhash}{8ccceaacf8aae2653ee2094056455b66}
+      \strng{bibnamehash}{8ccceaacf8aae2653ee2094056455b66}
+      \strng{authorbibnamehash}{8ccceaacf8aae2653ee2094056455b66}
+      \strng{authornamehash}{ddabce7ab3d35f0fed32f81e964b95ff}
+      \strng{authorfullhash}{8ccceaacf8aae2653ee2094056455b66}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Canadian Journal of Fisheries and Aquatic Sciences}
+      \field{number}{8}
+      \field{title}{A general theory for analyzing catch at age data}
+      \field{volume}{39}
+      \field{year}{1982}
+      \field{pages}{1195\bibrangedash 1207}
+      \range{pages}{13}
+    \endentry
+    \entry{fricker2013three}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4faee83282d709598d8ffcb9dcbc2f8b}{%
+           family={Fricker},
+           familyi={F\bibinitperiod},
+           given={Thomas\bibnamedelima E},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3f44a656088d9354e5c8867f87fb870f}{%
+           family={Ferro},
+           familyi={F\bibinitperiod},
+           given={Christopher\bibnamedelima AT},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a7028b5a8a1ab0f04825a197a5efc28b}{%
+           family={Stephenson},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{76475d4ff024af67471da6501048c18f}
+      \strng{fullhash}{47e168faf3d74e749929220bf8966684}
+      \strng{bibnamehash}{47e168faf3d74e749929220bf8966684}
+      \strng{authorbibnamehash}{47e168faf3d74e749929220bf8966684}
+      \strng{authornamehash}{76475d4ff024af67471da6501048c18f}
+      \strng{authorfullhash}{47e168faf3d74e749929220bf8966684}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Meteorological Applications}
+      \field{number}{2}
+      \field{title}{Three recommendations for evaluating climate predictions}
+      \field{volume}{20}
+      \field{year}{2013}
+      \field{pages}{246\bibrangedash 255}
+      \range{pages}{10}
+    \endentry
+    \entry{fu2018yft}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4438008b396a9883066bd6b44dba034c}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f9f41c2b1fc13edbfba0a612bf9ca8f}{%
+           family={Langley},
+           familyi={L\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=706b2730210760853b9a9e52ce0067e9}{%
+           family={Merino},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8ba63f591355c4a5a7153a929e73f27}{%
+           family={Ijurco},
+           familyi={I\bibinitperiod},
+           given={A.U.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOTC}%
+      }
+      \strng{namehash}{53e2ebf0597a34c83bf820d447dc7d89}
+      \strng{fullhash}{2e9f92ac6b20dd79fca747f8979a9fb4}
+      \strng{bibnamehash}{53e2ebf0597a34c83bf820d447dc7d89}
+      \strng{authorbibnamehash}{53e2ebf0597a34c83bf820d447dc7d89}
+      \strng{authornamehash}{53e2ebf0597a34c83bf820d447dc7d89}
+      \strng{authorfullhash}{2e9f92ac6b20dd79fca747f8979a9fb4}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{33}
+      \field{title}{Preliminary Indian ocean yellowfin tuna stock assessment 1950-2017 (Stock Synthesis)}
+      \field{volume}{IOTC-2018-WPTT20}
+      \field{year}{2018}
+    \endentry
+    \entry{garcia1996precautionary}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d26ed60fe17f3a9af32893dc437e4442}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={{SM}},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d26ed60fe17f3a9af32893dc437e4442}
+      \strng{fullhash}{d26ed60fe17f3a9af32893dc437e4442}
+      \strng{bibnamehash}{d26ed60fe17f3a9af32893dc437e4442}
+      \strng{authorbibnamehash}{d26ed60fe17f3a9af32893dc437e4442}
+      \strng{authornamehash}{d26ed60fe17f3a9af32893dc437e4442}
+      \strng{authorfullhash}{d26ed60fe17f3a9af32893dc437e4442}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{FAO} Fisheries Technical Paper}
+      \field{title}{The precautionary approach to fisheries and its implications for fishery research, technology and management: an updated review}
+      \field{year}{1996}
+      \field{pages}{1\bibrangedash 76}
+      \range{pages}{76}
+    \endentry
+    \entry{glickman2000glossary}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7c0b83809eb75f0568b385a748db5966}{%
+           family={Glickman},
+           familyi={G\bibinitperiod},
+           given={Todd\bibnamedelima S},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b7d9aa19b70014aaa6f5b009f4c3859}{%
+           family={Zenk},
+           familyi={Z\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Meteorological Society}%
+      }
+      \strng{namehash}{b1eecbd5722c6768fc5d185d165c88b3}
+      \strng{fullhash}{4f58cd96df5086987fa722081fee78e7}
+      \strng{bibnamehash}{4f58cd96df5086987fa722081fee78e7}
+      \strng{authorbibnamehash}{4f58cd96df5086987fa722081fee78e7}
+      \strng{authornamehash}{b1eecbd5722c6768fc5d185d165c88b3}
+      \strng{authorfullhash}{4f58cd96df5086987fa722081fee78e7}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Glossary of meteorology}
+      \field{year}{2000}
+    \endentry
+    \entry{griggs2002climate}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=54b2fda46aaebefed632fc6989f0c606}{%
+           family={Griggs},
+           familyi={G\bibinitperiod},
+           given={David\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7f8f5264c99912fcd0d990a4a1b7810}{%
+           family={Noguer},
+           familyi={N\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{364ca131fa05fa651906487ae195c1da}
+      \strng{fullhash}{6d539f5c8900b74e9005bac0f3d4d440}
+      \strng{bibnamehash}{6d539f5c8900b74e9005bac0f3d4d440}
+      \strng{authorbibnamehash}{6d539f5c8900b74e9005bac0f3d4d440}
+      \strng{authornamehash}{364ca131fa05fa651906487ae195c1da}
+      \strng{authorfullhash}{6d539f5c8900b74e9005bac0f3d4d440}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Weather}
+      \field{number}{8}
+      \field{title}{Climate change 2001: the scientific basis. Contribution of working group I to the third assessment report of the intergovernmental panel on climate change}
+      \field{volume}{57}
+      \field{year}{2002}
+      \field{pages}{267\bibrangedash 269}
+      \range{pages}{3}
+    \endentry
+    \entry{harley2001catch}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9242c4a8c5edf5a134c7e51218064c31}{%
+           family={Harley},
+           familyi={H\bibinitperiod},
+           given={Shelton\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=035a6ef636c3c94f3073ec6ee82f85fe}{%
+           family={Myers},
+           familyi={M\bibinitperiod},
+           given={Ransom\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14e3d59e9b28acb5238dc99e27df2586}{%
+           family={Dunn},
+           familyi={D\bibinitperiod},
+           given={Alistair},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {NRC Research Press}%
+      }
+      \strng{namehash}{ed6f677301648b8af78d07395bad44a4}
+      \strng{fullhash}{a88b0f6eded7562e0cc16912d9512f50}
+      \strng{bibnamehash}{a88b0f6eded7562e0cc16912d9512f50}
+      \strng{authorbibnamehash}{a88b0f6eded7562e0cc16912d9512f50}
+      \strng{authornamehash}{ed6f677301648b8af78d07395bad44a4}
+      \strng{authorfullhash}{a88b0f6eded7562e0cc16912d9512f50}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Canadian Journal of Fisheries and Aquatic Sciences}
+      \field{number}{9}
+      \field{title}{Is catch-per-unit-effort proportional to abundance?}
+      \field{volume}{58}
+      \field{year}{2001}
+      \field{pages}{1760\bibrangedash 1772}
+      \range{pages}{13}
+    \endentry
+    \entry{head2015extent}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=e3fd04ce926471e187d0f11264517509}{%
+           family={Head},
+           familyi={H\bibinitperiod},
+           given={Megan\bibnamedelima L},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35eac58711b3090aca47662fc41eacb6}{%
+           family={Holman},
+           familyi={H\bibinitperiod},
+           given={Luke},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60eb8ca962e5f9223309aad64f858a90}{%
+           family={Lanfear},
+           familyi={L\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a5cae1bc37889c6b6d79dd8a55b2e8a}{%
+           family={Kahn},
+           familyi={K\bibinitperiod},
+           given={Andrew\bibnamedelima T},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec96200f2504e90ae745c67a5c4ea644}{%
+           family={Jennions},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{3a6aecc20a37dfbb3ac3c0eaf1776e43}
+      \strng{fullhash}{13915111a69ff0a758bbf93623d94b30}
+      \strng{bibnamehash}{3a6aecc20a37dfbb3ac3c0eaf1776e43}
+      \strng{authorbibnamehash}{3a6aecc20a37dfbb3ac3c0eaf1776e43}
+      \strng{authornamehash}{3a6aecc20a37dfbb3ac3c0eaf1776e43}
+      \strng{authorfullhash}{13915111a69ff0a758bbf93623d94b30}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS Biol}
+      \field{number}{3}
+      \field{title}{The extent and consequences of p-hacking in science}
+      \field{volume}{13}
+      \field{year}{2015}
+      \field{pages}{e1002106}
+      \range{pages}{-1}
+    \endentry
+    \entry{hilborn2003state}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d85fe59626de2bcf628877dc353e7b3c}{%
+           family={Hilborn},
+           familyi={H\bibinitperiod},
+           given={Ray},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d85fe59626de2bcf628877dc353e7b3c}
+      \strng{fullhash}{d85fe59626de2bcf628877dc353e7b3c}
+      \strng{bibnamehash}{d85fe59626de2bcf628877dc353e7b3c}
+      \strng{authorbibnamehash}{d85fe59626de2bcf628877dc353e7b3c}
+      \strng{authornamehash}{d85fe59626de2bcf628877dc353e7b3c}
+      \strng{authorfullhash}{d85fe59626de2bcf628877dc353e7b3c}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientia Marina}
+      \field{number}{S1}
+      \field{title}{The state of the art in stock assessment: where we are and where we are going}
+      \field{volume}{67}
+      \field{year}{2003}
+      \field{pages}{15\bibrangedash 20}
+      \range{pages}{6}
+    \endentry
+    \entry{hodges1992you}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3e89467b181ca624e3d0813bc711edda}{%
+           family={Hodges},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=973ecfb9738182f49488de94b1d61032}{%
+           family={Dewar},
+           familyi={D\bibinitperiod},
+           given={James\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f43043e04b19595f494d7f027a50836}{%
+           family={Center},
+           familyi={C\bibinitperiod},
+           given={Arroyo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Santa Monica, CA: Rand}%
+      }
+      \strng{namehash}{68d22aa98c5ac232cd7f06bc6a895bfc}
+      \strng{fullhash}{960ec00d651fdeea916b8f10fb81459d}
+      \strng{bibnamehash}{960ec00d651fdeea916b8f10fb81459d}
+      \strng{authorbibnamehash}{960ec00d651fdeea916b8f10fb81459d}
+      \strng{authornamehash}{68d22aa98c5ac232cd7f06bc6a895bfc}
+      \strng{authorfullhash}{960ec00d651fdeea916b8f10fb81459d}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Is it you or your model talking?: A framework for model validation}
+      \field{year}{1992}
+    \endentry
+    \entry{hurtado2014looking}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=95278d8339c1282a9bb8e605af72164c}{%
+           family={Hurtado-Ferro},
+           familyi={H\bibinithyphendelim F\bibinitperiod},
+           given={Felipe},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2c2c4f60349b8ac87dcef2af779f2c0}{%
+           family={Szuwalski},
+           familyi={S\bibinitperiod},
+           given={Cody\bibnamedelima S},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebe6b2bd99499eb63de2426fdc01e66d}{%
+           family={Valero},
+           familyi={V\bibinitperiod},
+           given={Juan\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f84bfdb0f81cbbcc6905abe4b2763d7c}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Sean\bibnamedelima C},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ffbca640155b2beaa71c237c549ed15c}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={Curry\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=feb310e73c946ee37331f3aad3aa42b2}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Kelli\bibnamedelima F},
+           giveni={K\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f591039b981824af30fc195b42656e58}{%
+           family={Licandeo},
+           familyi={L\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=82aab19c06909e5276918b202d0517c7}{%
+           family={McGilliard},
+           familyi={M\bibinitperiod},
+           given={Carey\bibnamedelima R},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5564a8157c4b99095ed4e46c2868bf6a}{%
+           family={Monnahan},
+           familyi={M\bibinitperiod},
+           given={Cole\bibnamedelima C},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5714cc72da584472bae59925ef9efa4b}{%
+           family={Muradian},
+           familyi={M\bibinitperiod},
+           given={Melissa\bibnamedelima L},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{ad637dbb5ffb20911f8fc8896cddb3a6}
+      \strng{fullhash}{0c924993c181919b587d826b32d8c917}
+      \strng{bibnamehash}{ad637dbb5ffb20911f8fc8896cddb3a6}
+      \strng{authorbibnamehash}{ad637dbb5ffb20911f8fc8896cddb3a6}
+      \strng{authornamehash}{ad637dbb5ffb20911f8fc8896cddb3a6}
+      \strng{authorfullhash}{0c924993c181919b587d826b32d8c917}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICES Journal of Marine Science}
+      \field{number}{1}
+      \field{title}{Looking in the rear-view mirror: bias and retrospective patterns in integrated, age-structured stock assessment models}
+      \field{volume}{72}
+      \field{year}{2015}
+      \field{pages}{99\bibrangedash 110}
+      \range{pages}{12}
+    \endentry
+    \entry{huschke1959glossary}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1c47b517e9831cabdd5413f7d914beb}{%
+           family={Huschke},
+           familyi={H\bibinitperiod},
+           given={Ralph\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Meteorological Society}%
+      }
+      \strng{namehash}{0e505d549c54af00b93f649d6a2dfb31}
+      \strng{fullhash}{0e505d549c54af00b93f649d6a2dfb31}
+      \strng{bibnamehash}{0e505d549c54af00b93f649d6a2dfb31}
+      \strng{authorbibnamehash}{0e505d549c54af00b93f649d6a2dfb31}
+      \strng{authornamehash}{0e505d549c54af00b93f649d6a2dfb31}
+      \strng{authorfullhash}{0e505d549c54af00b93f649d6a2dfb31}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Glossary of meteorology}
+      \field{year}{1959}
+    \endentry
+    \entry{hyndman2006another}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2f709db8a046ae1d056e75c1f3aad31c}{%
+           family={Hyndman},
+           familyi={H\bibinitperiod},
+           given={Rob\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1d517a3ae1d7b892371ef8f37f88412}{%
+           family={Koehler},
+           familyi={K\bibinitperiod},
+           given={Anne\bibnamedelima B},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ccc2789bf08f9c87acbe5bd693e108ea}
+      \strng{fullhash}{5b8826bba5f702862b6f6d20f0ae0758}
+      \strng{bibnamehash}{5b8826bba5f702862b6f6d20f0ae0758}
+      \strng{authorbibnamehash}{5b8826bba5f702862b6f6d20f0ae0758}
+      \strng{authornamehash}{ccc2789bf08f9c87acbe5bd693e108ea}
+      \strng{authorfullhash}{5b8826bba5f702862b6f6d20f0ae0758}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of forecasting}
+      \field{number}{4}
+      \field{title}{Another look at measures of forecast accuracy}
+      \field{volume}{22}
+      \field{year}{2006}
+      \field{pages}{679\bibrangedash 688}
+      \range{pages}{10}
+    \endentry
+    \entry{ianelli2016multi}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=843f9a1ce3348083ff02f16ee5a1202f}{%
+           family={Ianelli},
+           familyi={I\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3ba912e2efa4132b0a3bf92a8ad4b3b}{%
+           family={Holsman},
+           familyi={H\bibinitperiod},
+           given={Kirstin\bibnamedelima K},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36af575f935d15911008a614e099a74f}{%
+           family={Punt},
+           familyi={P\bibinitperiod},
+           given={Andr{é}\bibnamedelima E},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=322a7ba0606cf0d9e7609a5ed00ddf98}{%
+           family={Aydin},
+           familyi={A\bibinitperiod},
+           given={Kerim},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d7b9c1ee8a438e919f1ba50a0aea37bc}
+      \strng{fullhash}{225b669b6a9e35416340eec331e901ce}
+      \strng{bibnamehash}{d7b9c1ee8a438e919f1ba50a0aea37bc}
+      \strng{authorbibnamehash}{d7b9c1ee8a438e919f1ba50a0aea37bc}
+      \strng{authornamehash}{d7b9c1ee8a438e919f1ba50a0aea37bc}
+      \strng{authorfullhash}{225b669b6a9e35416340eec331e901ce}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Deep Sea Research Part II: Topical Studies in Oceanography}
+      \field{title}{Multi-model inference for incorporating trophic and climate uncertainty into stock assessments}
+      \field{volume}{134}
+      \field{year}{2016}
+      \field{pages}{379\bibrangedash 389}
+      \range{pages}{11}
+    \endentry
+    \entry{IOTWPTT21}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=46874e8d9cef27ffc582acde3689dc20}{%
+           family={IOTC},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Indian Ocean Tuna Commission}%
+      }
+      \list{location}{1}{%
+        {Pasaia, Spain}%
+      }
+      \strng{namehash}{46874e8d9cef27ffc582acde3689dc20}
+      \strng{fullhash}{46874e8d9cef27ffc582acde3689dc20}
+      \strng{bibnamehash}{46874e8d9cef27ffc582acde3689dc20}
+      \strng{authorbibnamehash}{46874e8d9cef27ffc582acde3689dc20}
+      \strng{authornamehash}{46874e8d9cef27ffc582acde3689dc20}
+      \strng{authorfullhash}{46874e8d9cef27ffc582acde3689dc20}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{IOTC-2019-WPTT21-R}
+      \field{title}{Report of the 21st Working Party on Tropical Tuna}
+      \field{type}{techreport}
+      \field{year}{2019}
+    \endentry
+    \entry{jiao2012modelling}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9b45a53794a40492fafb25c7d8484d6e}{%
+           family={Jiao},
+           familyi={J\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c04a8107eceee7df5b9a58c62cf7a3dd}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Eric\bibnamedelima P},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2250b8ccb915c7ae95dd2450132002d}{%
+           family={O'Reilly},
+           familyi={O\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac31fd67514dfbe33d8eef057cd93650}{%
+           family={Orth},
+           familyi={O\bibinitperiod},
+           given={Donald\bibnamedelima J},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{dd141d4792600425963bf229fbca2f30}
+      \strng{fullhash}{6aaaeb2e8eb858418eb36238634bee5e}
+      \strng{bibnamehash}{dd141d4792600425963bf229fbca2f30}
+      \strng{authorbibnamehash}{dd141d4792600425963bf229fbca2f30}
+      \strng{authornamehash}{dd141d4792600425963bf229fbca2f30}
+      \strng{authorfullhash}{6aaaeb2e8eb858418eb36238634bee5e}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICES J. Mar. Sci.}
+      \field{number}{1}
+      \field{title}{Modelling non-stationary natural mortality in catch-at-age models}
+      \field{volume}{69}
+      \field{year}{2012}
+      \field{pages}{105\bibrangedash 118}
+      \range{pages}{14}
+    \endentry
+    \entry{jin2008current}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=e5d5e5fca9217b23983da62f85dea77c}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Emilia\bibnamedelima K},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c50b4615e790250f9418d22415a9e561}{%
+           family={Kinter\bibnamedelima III},
+           familyi={K\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={James\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc58cd6a24a023ce7177d8f199d47875}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=966af484497465fada13f6a86bfc5b39}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={C-K},
+           giveni={C\bibinithyphendelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45fdb6535a783746479ea6a4c7741d2b}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={I-S},
+           giveni={I\bibinithyphendelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cdffbacbc3d391250c38ffa06e8bacde}{%
+           family={Kirtman},
+           familyi={K\bibinitperiod},
+           given={BP},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a014179f48a9d620e54cc857a70c15e}{%
+           family={Kug},
+           familyi={K\bibinitperiod},
+           given={J-S},
+           giveni={J\bibinithyphendelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40faa1bc69980517511d12eb5ab3c8bb}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efe796ba675aca30b4dae2774b0154dc}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={J-J},
+           giveni={J\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8f921c7bd5724a8fcef95db5f757791}{%
+           family={Schemm},
+           familyi={S\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9a03d086bc02bef2cc0a04cc87c78028}
+      \strng{fullhash}{2a9b85a610d5af3138b12f00b9c20662}
+      \strng{bibnamehash}{9a03d086bc02bef2cc0a04cc87c78028}
+      \strng{authorbibnamehash}{9a03d086bc02bef2cc0a04cc87c78028}
+      \strng{authornamehash}{9a03d086bc02bef2cc0a04cc87c78028}
+      \strng{authorfullhash}{2a9b85a610d5af3138b12f00b9c20662}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Climate Dynamics}
+      \field{number}{6}
+      \field{title}{Current status of ENSO prediction skill in coupled ocean--atmosphere models}
+      \field{volume}{31}
+      \field{year}{2008}
+      \field{pages}{647\bibrangedash 664}
+      \range{pages}{18}
+    \endentry
+    \entry{kell2019optimising}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=d9936e111d3ebc1307394c923cd8b09a}{%
+           family={Kell},
+           familyi={K\bibinitperiod},
+           given={{Alexander John Michael}},
+           giveni={A\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=e80d73747d575764f365ccc6b0ef133e}{%
+           family={Forshaw},
+           familyi={F\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47cb966c84154d954613c8c5baa04506}{%
+           family={McGough},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi Stephen},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4eed6bd8ec3ed6f42b536f7580a5fdb7}
+      \strng{fullhash}{1ab86ccf94bc213904dab3d551f00d5d}
+      \strng{bibnamehash}{1ab86ccf94bc213904dab3d551f00d5d}
+      \strng{authorbibnamehash}{1ab86ccf94bc213904dab3d551f00d5d}
+      \strng{authornamehash}{4eed6bd8ec3ed6f42b536f7580a5fdb7}
+      \strng{authorfullhash}{1ab86ccf94bc213904dab3d551f00d5d}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 Tenth International Green and Sustainable Computing Conference (IGSC)}
+      \field{title}{Optimising energy and overhead for large parameter space simulations}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+    \endentry
+    \entry{kell2016xval}{article}{}
+      \name{author}{3}{ul=2}{%
+        {{un=1,uniquepart=given,hash=9b70b9dff4da4ba9843110c061aa75f3}{%
+           family={Kell},
+           familyi={K\bibinitperiod},
+           given={Laurence\bibnamedelima T},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=fef173946c172a445305e6b543aa92c5}{%
+           family={Kimoto},
+           familyi={K\bibinitperiod},
+           given={Ai},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04da907202f9966157ba5fe27a249f43}{%
+           family={Kitakado},
+           familyi={K\bibinitperiod},
+           given={Toshihide},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3a6a6a1737a7d51798e60c3175175363}
+      \strng{fullhash}{90ec209bf689aaa18878c6e0c9ae6032}
+      \strng{bibnamehash}{90ec209bf689aaa18878c6e0c9ae6032}
+      \strng{authorbibnamehash}{90ec209bf689aaa18878c6e0c9ae6032}
+      \strng{authornamehash}{3a6a6a1737a7d51798e60c3175175363}
+      \strng{authorfullhash}{90ec209bf689aaa18878c6e0c9ae6032}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fisheries research}
+      \field{title}{Evaluation of the prediction skill of stock assessment using hindcasting}
+      \field{volume}{183}
+      \field{year}{2016}
+      \field{pages}{119\bibrangedash 127}
+      \range{pages}{9}
+    \endentry
+    \entry{kell2016quantification}{article}{}
+      \name{author}{9}{ul=2}{%
+        {{un=1,uniquepart=given,hash=9b70b9dff4da4ba9843110c061aa75f3}{%
+           family={Kell},
+           familyi={K\bibinitperiod},
+           given={Laurence\bibnamedelima T},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=20fa5595da0e70c01b799c5a9972dc64}{%
+           family={Levontin},
+           familyi={L\bibinitperiod},
+           given={Polina},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=357c3598e937174e028044d1cbc551bb}{%
+           family={Davies},
+           familyi={D\bibinitperiod},
+           given={Campbell\bibnamedelima R},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=671b5db5498881dc7b424f19f228c173}{%
+           family={Harley},
+           familyi={H\bibinitperiod},
+           given={Shelton},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d8354587030c064e81ceb103ddf3496}{%
+           family={Kolody},
+           familyi={K\bibinitperiod},
+           given={Dale\bibnamedelima S},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7dbfa76a6cd9c98b4977ca5fa5914b81}{%
+           family={Maunder},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima N},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=300b6e008551c67f5f241cd42b5dd088}{%
+           family={Mosqueira},
+           familyi={M\bibinitperiod},
+           given={Iago},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5462120db3c89bba38454cd3c015ec57}{%
+           family={Pilling},
+           familyi={P\bibinitperiod},
+           given={Graham\bibnamedelima M},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=339b14392b75ce32711724ae91db3a78}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Rishi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Oxford, UK}%
+      }
+      \list{publisher}{1}{%
+        {Earthscan (Routledge)}%
+      }
+      \strng{namehash}{1df7127f51c2323251ed53e9b68121e0}
+      \strng{fullhash}{b8ef005d40bff61addb927597e6bc022}
+      \strng{bibnamehash}{1df7127f51c2323251ed53e9b68121e0}
+      \strng{authorbibnamehash}{1df7127f51c2323251ed53e9b68121e0}
+      \strng{authornamehash}{1df7127f51c2323251ed53e9b68121e0}
+      \strng{authorfullhash}{b8ef005d40bff61addb927597e6bc022}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management Science in Fisheries: An Introduction to Simulation-based Methods}
+      \field{title}{The quantification and presentation of risk}
+      \field{year}{2016}
+      \field{pages}{348}
+      \range{pages}{1}
+    \endentry
+    \entry{langley2015yft}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0f9f41c2b1fc13edbfba0a612bf9ca8f}{%
+           family={Langley},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOTC}%
+      }
+      \strng{namehash}{0f9f41c2b1fc13edbfba0a612bf9ca8f}
+      \strng{fullhash}{0f9f41c2b1fc13edbfba0a612bf9ca8f}
+      \strng{bibnamehash}{0f9f41c2b1fc13edbfba0a612bf9ca8f}
+      \strng{authorbibnamehash}{0f9f41c2b1fc13edbfba0a612bf9ca8f}
+      \strng{authornamehash}{0f9f41c2b1fc13edbfba0a612bf9ca8f}
+      \strng{authorfullhash}{0f9f41c2b1fc13edbfba0a612bf9ca8f}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{33}
+      \field{title}{Stock assessment of yellowfin tuna in the Indian Ocean using Stock Synthesis}
+      \field{volume}{IOTC-2018-WPTT20}
+      \field{year}{2015}
+    \endentry
+    \entry{lee2011m}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=579c2f22f8bc9f10ba7ef5ce51034986}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Hui-Hua},
+           giveni={H\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7dbfa76a6cd9c98b4977ca5fa5914b81}{%
+           family={Maunder},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima N},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f46afa075d6bace7de3f59997c6afc1}{%
+           family={Piner},
+           familyi={P\bibinitperiod},
+           given={Kevin\bibnamedelima R},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0748abcf0d037f863b0ecda820a86bf3}{%
+           family={Methot},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima D},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{086e64238a3d896103ae04d9e6e9efb0}
+      \strng{fullhash}{4205e26c9ffced28b85e11772bad7833}
+      \strng{bibnamehash}{086e64238a3d896103ae04d9e6e9efb0}
+      \strng{authorbibnamehash}{086e64238a3d896103ae04d9e6e9efb0}
+      \strng{authornamehash}{086e64238a3d896103ae04d9e6e9efb0}
+      \strng{authorfullhash}{4205e26c9ffced28b85e11772bad7833}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fish. Res.}
+      \field{number}{1}
+      \field{title}{Estimating natural mortality within a fisheries stock assessment model: an evaluation using simulation analysis based on twelve stock assessments}
+      \field{volume}{109}
+      \field{year}{2011}
+      \field{pages}{89\bibrangedash 94}
+      \range{pages}{6}
+    \endentry
+    \entry{lee2012steepness}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=579c2f22f8bc9f10ba7ef5ce51034986}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Hui-Hua},
+           giveni={H\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7dbfa76a6cd9c98b4977ca5fa5914b81}{%
+           family={Maunder},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima N},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f46afa075d6bace7de3f59997c6afc1}{%
+           family={Piner},
+           familyi={P\bibinitperiod},
+           given={Kevin\bibnamedelima R},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0748abcf0d037f863b0ecda820a86bf3}{%
+           family={Methot},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima D},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{086e64238a3d896103ae04d9e6e9efb0}
+      \strng{fullhash}{4205e26c9ffced28b85e11772bad7833}
+      \strng{bibnamehash}{086e64238a3d896103ae04d9e6e9efb0}
+      \strng{authorbibnamehash}{086e64238a3d896103ae04d9e6e9efb0}
+      \strng{authornamehash}{086e64238a3d896103ae04d9e6e9efb0}
+      \strng{authorfullhash}{4205e26c9ffced28b85e11772bad7833}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fish. Res.}
+      \field{title}{Can steepness of the stock--recruitment relationship be estimated in fishery stock assessment models?}
+      \field{volume}{125}
+      \field{year}{2012}
+      \field{pages}{254\bibrangedash 261}
+      \range{pages}{8}
+    \endentry
+    \entry{maunder2015contemporary}{article}{}
+      \name{author}{2}{ul=2}{%
+        {{un=2,uniquepart=given,hash=7dbfa76a6cd9c98b4977ca5fa5914b81}{%
+           family={Maunder},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima N},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=7f46afa075d6bace7de3f59997c6afc1}{%
+           family={Piner},
+           familyi={P\bibinitperiod},
+           given={Kevin\bibnamedelima R},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d7d2cc6b67829ba319f36782b2f67333}
+      \strng{fullhash}{d7d2cc6b67829ba319f36782b2f67333}
+      \strng{bibnamehash}{d7d2cc6b67829ba319f36782b2f67333}
+      \strng{authorbibnamehash}{d7d2cc6b67829ba319f36782b2f67333}
+      \strng{authornamehash}{d7d2cc6b67829ba319f36782b2f67333}
+      \strng{authorfullhash}{d7d2cc6b67829ba319f36782b2f67333}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICES Journal of Marine Science}
+      \field{number}{1}
+      \field{title}{Contemporary fisheries stock assessment: many issues still remain}
+      \field{volume}{72}
+      \field{year}{2015}
+      \field{pages}{7\bibrangedash 18}
+      \range{pages}{12}
+    \endentry
+    \entry{maunder2013review}{article}{}
+      \name{author}{2}{ul=2}{%
+        {{un=2,uniquepart=given,hash=7dbfa76a6cd9c98b4977ca5fa5914b81}{%
+           family={Maunder},
+           familyi={M\bibinitperiod},
+           given={Mark\bibnamedelima N},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=2}}%
+        {{un=2,uniquepart=given,hash=36af575f935d15911008a614e099a74f}{%
+           family={Punt},
+           familyi={P\bibinitperiod},
+           given={Andr{é}\bibnamedelima E},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{2a2a765f97c0a6a6d346f5e8a618cda1}
+      \strng{fullhash}{2a2a765f97c0a6a6d346f5e8a618cda1}
+      \strng{bibnamehash}{2a2a765f97c0a6a6d346f5e8a618cda1}
+      \strng{authorbibnamehash}{2a2a765f97c0a6a6d346f5e8a618cda1}
+      \strng{authornamehash}{2a2a765f97c0a6a6d346f5e8a618cda1}
+      \strng{authorfullhash}{2a2a765f97c0a6a6d346f5e8a618cda1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fisheries Research}
+      \field{title}{A review of integrated analysis in fisheries stock assessment}
+      \field{volume}{142}
+      \field{year}{2013}
+      \field{pages}{61\bibrangedash 74}
+      \range{pages}{14}
+    \endentry
+    \entry{maunder2012review}{report}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=188f2f60e6180490f340c622f8795d9e}{%
+           family={Maunder},
+           familyi={M\bibinitperiod},
+           given={MN},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=fdd42d5ce240fac083756d7f87b7a9f0}{%
+           family={Aires-da-Silva},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Document YFT-01-07}%
+      }
+      \strng{namehash}{bb70ac190a5191e88fa28b9a8d28f486}
+      \strng{fullhash}{97b79c811e2d38b61caaf0d4dda17d52}
+      \strng{bibnamehash}{97b79c811e2d38b61caaf0d4dda17d52}
+      \strng{authorbibnamehash}{97b79c811e2d38b61caaf0d4dda17d52}
+      \strng{authornamehash}{bb70ac190a5191e88fa28b9a8d28f486}
+      \strng{authorfullhash}{97b79c811e2d38b61caaf0d4dda17d52}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A review and evaluation of natural mortality for the assessment and management of yellowfin tuna in the eastern Pacific Ocean. Inter-Amer. Trop. Tuna Comm}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{methot2013stock}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0748abcf0d037f863b0ecda820a86bf3}{%
+           family={Methot},
+           familyi={M\bibinitperiod},
+           given={Richard\bibnamedelima D},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34fb181c004e50070eb2d8193c4b53d3}{%
+           family={Wetzel},
+           familyi={W\bibinitperiod},
+           given={Chantell\bibnamedelima R},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8e16fb66df98aeff47d94a2d53f77dc7}
+      \strng{fullhash}{311f408ce60ed93876b0d17c66f20e2d}
+      \strng{bibnamehash}{311f408ce60ed93876b0d17c66f20e2d}
+      \strng{authorbibnamehash}{311f408ce60ed93876b0d17c66f20e2d}
+      \strng{authornamehash}{8e16fb66df98aeff47d94a2d53f77dc7}
+      \strng{authorfullhash}{311f408ce60ed93876b0d17c66f20e2d}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fisheries Research}
+      \field{title}{Stock synthesis: a biological and statistical framework for fish stock assessment and fishery management}
+      \field{volume}{142}
+      \field{year}{2013}
+      \field{pages}{86\bibrangedash 99}
+      \range{pages}{14}
+    \endentry
+    \entry{mohn1999retrospective}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b0fcd558914008e269ff57b041e820bd}{%
+           family={Mohn},
+           familyi={M\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{b0fcd558914008e269ff57b041e820bd}
+      \strng{fullhash}{b0fcd558914008e269ff57b041e820bd}
+      \strng{bibnamehash}{b0fcd558914008e269ff57b041e820bd}
+      \strng{authorbibnamehash}{b0fcd558914008e269ff57b041e820bd}
+      \strng{authornamehash}{b0fcd558914008e269ff57b041e820bd}
+      \strng{authorfullhash}{b0fcd558914008e269ff57b041e820bd}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICES Journal of Marine Science}
+      \field{number}{4}
+      \field{title}{The retrospective problem in sequential population analysis: an investigation using cod fishery and simulated data}
+      \field{volume}{56}
+      \field{year}{1999}
+      \field{pages}{473\bibrangedash 488}
+      \range{pages}{16}
+    \endentry
+    \entry{pepin2015reconsidering}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=abcfa6cadb54990ce2108d2ceca6b9ee}{%
+           family={Pepin},
+           familyi={P\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f432f93b50cb6e7575c321599cbcbbfa}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={C\bibnamedelima Tara},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {NRC Research Press}%
+      }
+      \strng{namehash}{cee26fd51e8baa9aa3f044744e28afaf}
+      \strng{fullhash}{89e21cc4ad34fd62dab35c1c944b10b2}
+      \strng{bibnamehash}{89e21cc4ad34fd62dab35c1c944b10b2}
+      \strng{authorbibnamehash}{89e21cc4ad34fd62dab35c1c944b10b2}
+      \strng{authornamehash}{cee26fd51e8baa9aa3f044744e28afaf}
+      \strng{authorfullhash}{89e21cc4ad34fd62dab35c1c944b10b2}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Canadian Journal of Fisheries and Aquatic Sciences}
+      \field{number}{999}
+      \field{title}{Reconsidering the impossible???linking environmental drivers to growth, mortality, and recruitment of fish 1}
+      \field{volume}{72}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+    \endentry
+    \entry{punt2007developing}{article}{}
+      \name{author}{2}{}{%
+        {{un=2,uniquepart=given,hash=36af575f935d15911008a614e099a74f}{%
+           family={Punt},
+           familyi={P\bibinitperiod},
+           given={Andr{é}\bibnamedelima E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=fda3f5a9c4a778eca0b5dbed96513b40}{%
+           family={Donovan},
+           familyi={D\bibinitperiod},
+           given={{G.P.}},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{09edb1522df62c63ee1d09641591250d}
+      \strng{fullhash}{88cce8a4ce33fad9f35f2ebe6d51e73c}
+      \strng{bibnamehash}{88cce8a4ce33fad9f35f2ebe6d51e73c}
+      \strng{authorbibnamehash}{88cce8a4ce33fad9f35f2ebe6d51e73c}
+      \strng{authornamehash}{09edb1522df62c63ee1d09641591250d}
+      \strng{authorfullhash}{88cce8a4ce33fad9f35f2ebe6d51e73c}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICES J. Mar. Sci.}
+      \field{number}{4}
+      \field{title}{Developing management procedures that are robust to uncertainty: lessons from the {International} {Whaling} {Commission}}
+      \field{volume}{64}
+      \field{year}{2007}
+      \field{pages}{603\bibrangedash 612}
+      \range{pages}{10}
+    \endentry
+    \entry{saltelli2020five}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=40222053beb161f856f5eea1c63522f9}{%
+           family={Saltelli},
+           familyi={S\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9eb7dd46d1a7e7f5a1b97aa9323edfc4}{%
+           family={Bammer},
+           familyi={B\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0eb79503c42bd8d78fb1da5038ba0a0e}{%
+           family={Bruno},
+           familyi={B\bibinitperiod},
+           given={Isabelle},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0cb77abe5d725d921273026410ee70ab}{%
+           family={Charters},
+           familyi={C\bibinitperiod},
+           given={Erica},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c788e18fbed2f3c22c9e7fb94faf0b6}{%
+           family={Di\bibnamedelima Fiore},
+           familyi={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c6933d585fd70aed70e748c229f42928}{%
+           family={Didier},
+           familyi={D\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc92f1ca9a53e4439c4d00ed90fa210a}{%
+           family={Espeland},
+           familyi={E\bibinitperiod},
+           given={Wendy\bibnamedelima Nelson},
+           giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a73a9330623fcef222b66dc90681076}{%
+           family={Kay},
+           familyi={K\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ffbea36fef364f43bdb824fc368d34f9}{%
+           family={Piano},
+           familyi={P\bibinitperiod},
+           given={Samuele\bibnamedelima Lo},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=baef2ca9d198c5d827269dde9fd6b9f5}{%
+           family={Mayo},
+           familyi={M\bibinitperiod},
+           given={Deborah},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{6bf91641f4c7b586ec8db024e8a3b0fe}
+      \strng{fullhash}{59f820b3c3ffc6529f7d523e32bf9b32}
+      \strng{bibnamehash}{6bf91641f4c7b586ec8db024e8a3b0fe}
+      \strng{authorbibnamehash}{6bf91641f4c7b586ec8db024e8a3b0fe}
+      \strng{authornamehash}{6bf91641f4c7b586ec8db024e8a3b0fe}
+      \strng{authorfullhash}{59f820b3c3ffc6529f7d523e32bf9b32}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Five ways to ensure that models serve society: a manifesto}
+      \field{year}{2020}
+    \endentry
+    \entry{schirripa2017hypothesis}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=c8e85c6d05ab93adaa7ded314410afb4}{%
+           family={Schirripa},
+           familyi={S\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a7581a57eaea0972c8d6f3584ae27c9}{%
+           family={Abascal},
+           familyi={A\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=499da3b02a0a370bd33135f037662264}{%
+           family={Andrushchenko},
+           familyi={A\bibinitperiod},
+           given={Irene},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7bd208bb250e041b30873b849d65c89}{%
+           family={Diaz},
+           familyi={D\bibinitperiod},
+           given={Guillermo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=143f7658f66c596b77daeefe4a9412ae}{%
+           family={Mejuto},
+           familyi={M\bibinitperiod},
+           given={Jaime},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=08b16c738686e163b30b44808c9aa5e9}{%
+           family={Ortiz},
+           familyi={O\bibinitperiod},
+           given={Maricio},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04fa60f79a2c7842be5b9d90fb52a99a}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={MN},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86ad7b550965c350edcc40ec464bc0ce}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5483b33170d4e13460a48a9ce4fd17ea}
+      \strng{fullhash}{956770a625b765ee38906ff0b59670d3}
+      \strng{bibnamehash}{5483b33170d4e13460a48a9ce4fd17ea}
+      \strng{authorbibnamehash}{5483b33170d4e13460a48a9ce4fd17ea}
+      \strng{authornamehash}{5483b33170d4e13460a48a9ce4fd17ea}
+      \strng{authorfullhash}{956770a625b765ee38906ff0b59670d3}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Deep Sea Research Part II: Topical Studies in Oceanography}
+      \field{title}{A hypothesis of a redistribution of North Atlantic swordfish based on changing ocean conditions}
+      \field{volume}{140}
+      \field{year}{2017}
+      \field{pages}{139\bibrangedash 150}
+      \range{pages}{12}
+    \endentry
+    \entry{sharma2020trfmo}{article}{}
+      \name{author}{14}{}{%
+        {{un=0,uniquepart=base,hash=339b14392b75ce32711724ae91db3a78}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Rishi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20fa5595da0e70c01b799c5a9972dc64}{%
+           family={Levontin},
+           familyi={L\bibinitperiod},
+           given={Polina},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04da907202f9966157ba5fe27a249f43}{%
+           family={Kitakado},
+           familyi={K\bibinitperiod},
+           given={Toshihide},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b0c50111644a8283f0774df8ee9cd941}{%
+           family={Kell},
+           familyi={K\bibinitperiod},
+           given={Laurence},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=300b6e008551c67f5f241cd42b5dd088}{%
+           family={Mosqueira},
+           familyi={M\bibinitperiod},
+           given={Iago},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fef173946c172a445305e6b543aa92c5}{%
+           family={Kimoto},
+           familyi={K\bibinitperiod},
+           given={Ai},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ff24f87a4fc783e20a207a4f6c58deaf}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=563de7a36d472ebc36b875736e64d026}{%
+           family={Minte-Vera},
+           familyi={M\bibinithyphendelim V\bibinitperiod},
+           given={Carolina},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f02d1633bb933703411cb75949056c6}{%
+           family={De\bibnamedelima Bruyn},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db290c3c971c0cd276c89edbd9684c3e}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Yimin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23199b5aea540743093fa23e25257880}{%
+           family={Kleineberg},
+           familyi={K\bibinitperiod},
+           given={Jana},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=247c21ea9ea5c303723d463e20561ba8}{%
+           family={Walton},
+           familyi={W\bibinitperiod},
+           given={Jo\bibnamedelima Lindsay},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edac55be9f089e3b80167a2304e6d8e4}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Shana},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=704fdb18fc91c80bf0399660485a90d8}{%
+           family={Magnusson},
+           familyi={M\bibinitperiod},
+           given={Arni},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{99b01ee00ea0775c281f0f67f1f6ec2c}
+      \strng{fullhash}{8c6dfee2df1e2d60b240e7b404dbcdb8}
+      \strng{bibnamehash}{99b01ee00ea0775c281f0f67f1f6ec2c}
+      \strng{authorbibnamehash}{99b01ee00ea0775c281f0f67f1f6ec2c}
+      \strng{authornamehash}{99b01ee00ea0775c281f0f67f1f6ec2c}
+      \strng{authorfullhash}{8c6dfee2df1e2d60b240e7b404dbcdb8}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fish and fisheries}
+      \field{number}{xx}
+      \field{title}{Operating model design in tuna Regional Fishery Management Organizations: Current practice, issues and implications}
+      \field{volume}{x}
+      \field{year}{2020}
+      \field{pages}{xxx\bibrangedash xxx}
+      \range{pages}{1}
+    \endentry
+    \entry{simon2012effects}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=5e6cbe8e2dcc839cc7590112f075d982}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={Maximilien},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ff88dc7d785b4932126588f5eae78b9}{%
+           family={Fromentin},
+           familyi={F\bibinitperiod},
+           given={Jean-Marc},
+           giveni={J\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db3808fb3e7acb431416788363c32485}{%
+           family={Bonhommeau},
+           familyi={B\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6592fdc4beecef3381fbfc0c876a1656}{%
+           family={Gaertner},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d80137147b8a3799f445eb9374bcfb39}{%
+           family={Brodziak},
+           familyi={B\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7151161f595f20508bc3e3fd879e1c18}{%
+           family={Etienne},
+           familyi={E\bibinitperiod},
+           given={Marie-Pierre},
+           giveni={M\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{01f6848a6852b0dfcab1684b6daf1137}
+      \strng{fullhash}{1ad6525a45bb9f572b837e2fde8a504c}
+      \strng{bibnamehash}{01f6848a6852b0dfcab1684b6daf1137}
+      \strng{authorbibnamehash}{01f6848a6852b0dfcab1684b6daf1137}
+      \strng{authornamehash}{01f6848a6852b0dfcab1684b6daf1137}
+      \strng{authorfullhash}{1ad6525a45bb9f572b837e2fde8a504c}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PloS one}
+      \field{number}{10}
+      \field{title}{Effects of stochasticity in early life history on steepness and population growth rate estimates: An illustration on Atlantic bluefin tuna}
+      \field{volume}{7}
+      \field{year}{2012}
+      \field{pages}{e48583}
+      \range{pages}{-1}
+    \endentry
+    \entry{taylor2001summarizing}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d769fc3e4b88e1e242aaf02d079490f8}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Karl\bibnamedelima E},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{d769fc3e4b88e1e242aaf02d079490f8}
+      \strng{fullhash}{d769fc3e4b88e1e242aaf02d079490f8}
+      \strng{bibnamehash}{d769fc3e4b88e1e242aaf02d079490f8}
+      \strng{authorbibnamehash}{d769fc3e4b88e1e242aaf02d079490f8}
+      \strng{authornamehash}{d769fc3e4b88e1e242aaf02d079490f8}
+      \strng{authorfullhash}{d769fc3e4b88e1e242aaf02d079490f8}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geophysical Research: Atmospheres (1984--2012)}
+      \field{number}{D7}
+      \field{title}{Summarizing multiple aspects of model performance in a single diagram}
+      \field{volume}{106}
+      \field{year}{2001}
+      \field{pages}{7183\bibrangedash 7192}
+      \range{pages}{10}
+    \endentry
+    \entry{thygesen2017validation}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=a66aaf96d3e2f42565d4711c05c3e5f3}{%
+           family={Thygesen},
+           familyi={T\bibinitperiod},
+           given={Uffe\bibnamedelima H{ø}gsbro},
+           giveni={U\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b67eba39ca6d9cdc7e52309a681833e}{%
+           family={Albertsen},
+           familyi={A\bibinitperiod},
+           given={Christoffer\bibnamedelima Moesgaard},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=169436bb542fd6d8accc980e8ec7cfac}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Casper\bibnamedelima Willestofte},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af4021d811c7c338149b137bba43dfce}{%
+           family={Kristensen},
+           familyi={K\bibinitperiod},
+           given={Kasper},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f11652d75ee2e5512ea3ea7d7e37b6d}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0d0acafec5755d105dbc319e0d01bba2}
+      \strng{fullhash}{82eb11bda8ff5f6b76e0fbf56affd95b}
+      \strng{bibnamehash}{0d0acafec5755d105dbc319e0d01bba2}
+      \strng{authorbibnamehash}{0d0acafec5755d105dbc319e0d01bba2}
+      \strng{authornamehash}{0d0acafec5755d105dbc319e0d01bba2}
+      \strng{authorfullhash}{82eb11bda8ff5f6b76e0fbf56affd95b}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environmental and Ecological Statistics}
+      \field{number}{2}
+      \field{title}{Validation of ecological state space models using the Laplace approximation}
+      \field{volume}{24}
+      \field{year}{2017}
+      \field{pages}{317\bibrangedash 339}
+      \range{pages}{23}
+    \endentry
+    \entry{urtizberea2018yft}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=0164a830f12223b52154d4546313cb9f}{%
+           family={Urtizberea},
+           familyi={U\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4438008b396a9883066bd6b44dba034c}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=706b2730210760853b9a9e52ce0067e9}{%
+           family={Merino},
+           familyi={M\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b957d80a8351b024da4421fcf6da503}{%
+           family={Methot},
+           familyi={M\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8edc54ffff47e05e1cbc68e32977635}{%
+           family={Cardinale},
+           familyi={C\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0e233eecbfeaee817cb9f28621a9f55}{%
+           family={Winker},
+           familyi={W\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fed37d3c1489d3e0c823dbffddc2075}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86675591e1abf5d8a3bbf7a8e182a1c9}{%
+           family={Murua},
+           familyi={M\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOTC}%
+      }
+      \strng{namehash}{2f6dff0d5b06ff7fc6d3e38031a790d3}
+      \strng{fullhash}{28881d91928b642f7c51d3ddd40f53b7}
+      \strng{bibnamehash}{2f6dff0d5b06ff7fc6d3e38031a790d3}
+      \strng{authorbibnamehash}{2f6dff0d5b06ff7fc6d3e38031a790d3}
+      \strng{authornamehash}{2f6dff0d5b06ff7fc6d3e38031a790d3}
+      \strng{authorfullhash}{28881d91928b642f7c51d3ddd40f53b7}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{33}
+      \field{title}{Preliminary Assessment of Indian Ocean Yellowfin Tuna 1950-2018 (Stock Synthesis, V3.30)}
+      \field{volume}{IOTC-2018-WPTT21-50}
+      \field{year}{2019}
+    \endentry
+    \entry{wasserstein2016asa}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ff3dadfd84ad3ad7395c0dbe5f46314c}{%
+           family={Wasserstein},
+           familyi={W\bibinitperiod},
+           given={Ronald\bibnamedelima L},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c5a2d4012f308f26ffedf1feaf3a7db}{%
+           family={Lazar},
+           familyi={L\bibinitperiod},
+           given={Nicole\bibnamedelima A},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{a161cea459ab35ce02e12353bb02787d}
+      \strng{fullhash}{79ddc9c61fc9805ed2457c43ccb5f736}
+      \strng{bibnamehash}{79ddc9c61fc9805ed2457c43ccb5f736}
+      \strng{authorbibnamehash}{79ddc9c61fc9805ed2457c43ccb5f736}
+      \strng{authornamehash}{a161cea459ab35ce02e12353bb02787d}
+      \strng{authorfullhash}{79ddc9c61fc9805ed2457c43ccb5f736}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The ASA statement on p-values: context, process, and purpose}
+      \field{year}{2016}
+    \endentry
+    \entry{weigel2008can}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6eb30ba5867a24aeff9f666d095078cf}{%
+           family={Weigel},
+           familyi={W\bibinitperiod},
+           given={AP},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56313fba59343158f58fca9a53105571}{%
+           family={Liniger},
+           familyi={L\bibinitperiod},
+           given={MA},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b04a94c075702dd08982ade20fb3e0fd}{%
+           family={Appenzeller},
+           familyi={A\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{76ac51b739067afaa3bb20c3a589b592}
+      \strng{fullhash}{884618ddf42feada19f6ba9fda1a3879}
+      \strng{bibnamehash}{884618ddf42feada19f6ba9fda1a3879}
+      \strng{authorbibnamehash}{884618ddf42feada19f6ba9fda1a3879}
+      \strng{authornamehash}{76ac51b739067afaa3bb20c3a589b592}
+      \strng{authorfullhash}{884618ddf42feada19f6ba9fda1a3879}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quarterly Journal of the Royal Meteorological Society}
+      \field{number}{630}
+      \field{title}{Can multi-model combination really enhance the prediction skill of probabilistic ensemble forecasts?}
+      \field{volume}{134}
+      \field{year}{2008}
+      \field{pages}{241\bibrangedash 260}
+      \range{pages}{20}
+    \endentry
+    \entry{whitten2013accounting}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b1822a6a5c3dd663a20e4469e31e3d54}{%
+           family={Whitten},
+           familyi={W\bibinitperiod},
+           given={Athol\bibnamedelima R},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2f6e17d80fd8d69c8e792935aec79f68}{%
+           family={Klaer},
+           familyi={K\bibinitperiod},
+           given={Neil\bibnamedelima L},
+           giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3615e43583cc02f0ed2e63c21502fde7}{%
+           family={Tuck},
+           familyi={T\bibinitperiod},
+           given={Geoffrey\bibnamedelima N},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cf28a002f1538660a7c97dd45036690d}{%
+           family={Day},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima W},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a6c7b06cde6906bebcf37d20e45b94d2}
+      \strng{fullhash}{585988344109a31bd505e3ca00438060}
+      \strng{bibnamehash}{a6c7b06cde6906bebcf37d20e45b94d2}
+      \strng{authorbibnamehash}{a6c7b06cde6906bebcf37d20e45b94d2}
+      \strng{authornamehash}{a6c7b06cde6906bebcf37d20e45b94d2}
+      \strng{authorfullhash}{585988344109a31bd505e3ca00438060}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fisheries Research}
+      \field{title}{Accounting for cohort-specific variable growth in fisheries stock assessments: a case study from south-eastern Australia}
+      \field{volume}{142}
+      \field{year}{2013}
+      \field{pages}{27\bibrangedash 36}
+      \range{pages}{10}
+    \endentry
+    \entry{winker2018jabba}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a2ce8e7c01be3006e576f0994a3db0c9}{%
+           family={Winker},
+           familyi={W\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcc3509a0e60efd43e0987e8fc7963cd}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Felipe},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a30fe3149f2644ef7533a73c34f1f87}{%
+           family={Kapur},
+           familyi={K\bibinitperiod},
+           given={Maia},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7accc1629dcc8cb7455a3cf44434d192}
+      \strng{fullhash}{524c02b28106705cb92d0702cede7021}
+      \strng{bibnamehash}{524c02b28106705cb92d0702cede7021}
+      \strng{authorbibnamehash}{524c02b28106705cb92d0702cede7021}
+      \strng{authornamehash}{7accc1629dcc8cb7455a3cf44434d192}
+      \strng{authorfullhash}{524c02b28106705cb92d0702cede7021}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fisheries Research}
+      \field{title}{JABBA: Just Another Bayesian Biomass Assessment}
+      \field{volume}{204}
+      \field{year}{2018}
+      \field{pages}{275\bibrangedash 288}
+      \range{pages}{14}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

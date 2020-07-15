@@ -1,0 +1,19 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'yftio.blg'
+[102] biber:322> INFO - === Wed Jul 15, 2020, 13:27:55
+[120] Biber.pm:415> INFO - Reading 'yftio.bcf'
+[212] Biber.pm:943> INFO - Found 54 citekeys in bib section 0
+[228] Biber.pm:4256> INFO - Processing section 0
+[229] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[229] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[241] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[245] bibtex.pm:1653> INFO - LaTeX decoding ...
+[383] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[387] Utils.pm:293> WARN - Duplicate entry key: 'wasserstein2016asa' in file 'references.bib', skipping ...
+[1043] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1043] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1044] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1044] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1128] bbl.pm:652> INFO - Writing 'yftio.bbl' with encoding 'UTF-8'
+[1200] bbl.pm:755> INFO - Output to yftio.bbl
+[1200] Biber.pm:128> INFO - WARNINGS: 1
