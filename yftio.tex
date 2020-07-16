@@ -76,9 +76,9 @@ The approach can be used to develop robust advice, either by estimating current 
 
 \section{Introduction}
 
-There are various definitions of stock assessment \parencite[e.g.][]{hilborn2003state,cadrin2014stock}. Our preference is for "The description of the characteristics of a 'stock' so that its biological reaction to being exploited can be rationally predicted and the predictions tested" (Holt pers comm.). Our reasoning is this explicitly recognises that the main aim of a stock assessment is to provide the basis for the long-term sustainable management of fisheries resources. Stock assessment, therefore, requires making and validating probabilistic estimates of stock status and forecasts of the consequences of management actions.
+There are various definitions of stock assessment \parencite[e.g.][]{hilborn2003state,cadrin2014stock}. Our preference is for ``The description of the characteristics of a 'stock' so that its biological reaction to being exploited can be rationally predicted and the predictions tested" (Holt pers comm.). Our reasoning is this explicitly recognises that the main aim of a stock assessment is to provide the basis for the long-term sustainable management of fisheries resources. Stock assessment, therefore, requires making and validating probabilistic estimates of stock status and forecasts of the consequences of management actions.
 
-Stock assessment is a critical element of fisheries management, and diagnostic tests are essential for determining the robustness of model estimates \parencite{carvalho2020cookbook}. Particularly since the adoption of the Precautionary Approach to fisheries management \parencite[PA,][]{garcia1996precautionary} requires a formal consideration of uncertainty, which is often addressed by the use of alternative modelling frameworks, assumptions and datasets. It can be challenging, therefore, to use diagnostics based on likelihoods and model residuals to compare models. An alternative is to use hindcasting to evaluate prediction skill \parencite{huschke1959glossary} by comparing model estimates to known values, i.e. by withholding recent data and predicting for the period omitted. Hindcasting can either be model based by comparing model estimates, or model-free by generating pseudo observations. The pseudo data are then compared to a reference set of observations \parencite{jin2008current, weigel2008can, balmaseda1995decadal}. Prediction skill can help to validate models by identify model misspecification, data conflicts and where models need to be extended. As a worked example, we compare three model families used for the assessment of Indian Ocean yellowfin tuna stock, namely a full integrated statistical model (SS), an age-structured production model (ASPM), and a Bayesian state-space biomass dynamic model (JABBA). 
+Stock assessment is a critical element of fisheries management, and diagnostic tests are essential for determining the robustness of model estimates \parencite{carvalho2020cookbook}. Particularly since the adoption of the Precautionary Approach to fisheries management \parencite[PA,][]{garcia1996precautionary} requires a formal consideration of uncertainty, which is often addressed by the use of different modelling frameworks, assumptions and datasets. It can be challenging, therefore, to use diagnostics based on likelihoods and model residuals to compare models. An alternative is to use hindcasting to evaluate prediction skill \parencite{huschke1959glossary} by comparing model estimates to known values, i.e. by withholding recent data and predicting for the period omitted. Hindcasting can either be model based by comparing model estimates, or model-free by generating pseudo observations. The pseudo data are then compared to a reference set of observations \parencite{jin2008current, weigel2008can, balmaseda1995decadal}. Prediction skill can help to validate models by identify model misspecification, data conflicts and where models need to be extended. As a worked example, we compare three model families used for the assessment of Indian Ocean yellowfin tuna stock, namely a full integrated statistical model (SS), an age-structured production model (ASPM), and a Bayesian state-space biomass dynamic model (JABBA). 
 
 Model validation is essential in many fields, e.g. in energy and climate modelling \parencite{kell2019optimising}, as this increases confidence in the outputs of a model and leads to an increase in trust amongst the public, stake and asset-holders and policymakers \parencite[][]{saltelli2020five}. Therefore, after a model structure has is agreed and parameters estimated, it is crucial to validate the model. Validation assesses whether it is plausible that a system identical to the model generated the data \parencite{thygesen2017validation}. The ambition of validation is not to prove that a model is correct, but to check that the model cannot be falsified with the available data. A different question from asking is the model fit for a given purpose, which depends on the intended use of the model. For example to evaluate whether an assessment model can help achieve maximum sustainable yield (MSY)  requires conducting Management Strategy Evaluation \parencite[MSE,][]{punt2007developing}; see \cite{sharma2020trfmo} for a review of current practice in the tuna Regional Fisheries Management Organisations (tRFMOs).    
 
@@ -90,6 +90,9 @@ A standard tool in stock assessment to check the stability of model estimates is
 
 
 \section{Material and Methods}
+
+\toshi{[Similar texts exist in the last paragraph of 2,2, where perhaps we can modify the text.]}
+
 Indices of abundance are a key contributor to the overall likelihood when fitting stock assessment models to data \parencite{whitten2013accounting}, and the sum of squared errors (SSE) between observed and predicted indices in log-space is the measure of fitness. When comparing models, however, the SSE is problematic because complex models tend to have many parameters to allow flexibility when fitting, which may result in a low SSE due to overfitting. Therefore, information criteria, such as AIC, have been developed to aid in model selection. AIC is only a relative measure of the appropriateness of models, however, and additional diagnostic tests are required for model validation. This is of particular importance for stock assessment models where only a single historical data set   exists, and the system can not be observed directly. 
 
 The objective of this study therefore is to devlop a procedure to validate and compare different families of models based on past events. To do this we extend retrospective analysis to conduct model-based and model-free hindcasts, by adding the additional step of projecting over the truncated years. Comparing model outputs with observations allows prediction skill to be estimated \parencite{kell2016xval}, defined as any measure of the accuracy of a forecasted value compared to the actual (i.e. observed) value that is not known by the model \parencite{glickman2000glossary}. 
@@ -135,29 +138,31 @@ Indices of abundance are a key contributor to the overall likelihood when fittin
 
 \subsection{Retrospective Analysis}
 
- In retrospective analysis observations are sequentially removed from the terminal year, the model is then refitted to the truncated series to see if there are any systematic pattern within a model. The retrospective bias is then evaluated using the so-called Mohn's rho  \parencite{mohn1999retrospective}.
+In retrospective analysis observations are sequentially removed from the terminal year, the model is then refitted to the truncated series to see if there are any systematic pattern within a model. The retrospective bias is then evaluated using the so-called Mohn's rho  \parencite{mohn1999retrospective}.
 
 \begin{equation}
 \label{eqn:mohn0}
 \rho_M = \disp \sum_{t=T-n}^{T-1} \frac{\hat{y}_{(1:t),t}-\hat{y}_{(1:T),t}}{\hat{y}_{(1:T),t}}, 
 \end{equation}
 
+\noindent
 where $\hat{y}$ denotes in general a model based quantity such as estimated biomass, or predicted abundance index. The value with suffix $\hat{y}_{(1:T),t}$ means a value estimated at time $t$ from the full series from 1 to $T$ and  $\hat{y}_{(1:t),t}$ is the value using a retrospective data window from 1 to $t (\leq T)$. 
 
-In this paper, we use a variant of the original $\rho$ as the mean: namely 
+In this paper, we use a variant of the original $\rho_M$ as the mean: namely 
 \begin{equation}
 \label{eqn:mohn}
 \rho_{Mr} = \disp \frac{1}{n} \sum_{t=T-n}^{T-1} \frac{\hat{y}_{(1:t),t}-\hat{y}_{(1:T),t}}{\hat{y}_{(1:T),t}} 
 \quad \mbox{[rho for retro-bias]}, 
 \end{equation}
-This metric is an average of relative differences at the final time of each window. Therefore it is a measure of relative retrospective `bias' (scale-free) in a statistical sense. The metric tends to be applied not on the log but the original scale because both the directions of positive and negative biases are regarded as being equivalent.  There are problems with the use of this matric, since for reference values which are low relative to the alternative, there is no upper limit, while in the reverse case the error cannot exceed 1.0. Therefore when using this metric in is usual to use a lower bound of -0.15 and an upper bound of 0.20 to identify acceptable performance.
+This metric is an average of relative differences at the final time of each window. Therefore it is a measure of relative retrospective `bias' (scale-free) in a statistical sense. The metric tends to be applied not on the log but the original scale because both the directions of positive and negative biases are regarded as being equivalent.  There are problems with the use of this matric, since for reference values which are low relative to the alternative, there is no upper limit, while in the reverse case the error cannot exceed 1.0. Therefore when using this metric it is usual to use a lower bound of -0.15 and an upper bound of 0.20 to identify acceptable performance.
 
 \subsection{Hindcast}
 
 Hindcasting, the primary focus in this paper, is an extension of retrospective analysis which projects several steps forward beyond the retrospective data window to quantify the prediction skill of a model. Theoretically, the projection period is to the end of the historical time period. However, in practice, the step size is one or several years ahead reflecting the time horizon required for robust management advice; considering non-small process stochasticity in fishery population dynamics and non-ignorable extents of observation uncertainty. For evaluating prediction skill, there are several metrics for model-dependent and model-free validations. 
 
-Hindcasting like traditional retrospective analysis involves fitting a model using a tailcutting procedure, where data are deleted sequentially for $n$ years, i.e. from year $T − n$ through to the last year, the additional step in the hindcast is that then the data from $T - n - 1$ are used to make predictions of what will happen in years $T - n$ through $T$.
+Hindcasting like traditional retrospective analysis involves fitting a model using a tailcutting procedure, where data are deleted sequentially for $n$ years, i.e. from year $T-n$ through to the last year, the additional step in the hindcast is that then the data from $T - n + 1$ are used to make predictions of what will happen in years $T - n$ through $T$.
 
+\textbf{[This paragraph can be after the next paragraph as an example?]}
 Since assessment cycles are typically for three years  with advice \parencite{fricker2013three} we projected the truncated estimates for three years. Three years was chosen as that is essentially the time-step between assessments in most tuna Regional Fisheries Management Organisations.
 
 \begin{algorithm}[!ht]
@@ -190,15 +195,18 @@ This is a simple extension of Mohn's rho to evaluate the prediction skill of a m
 To evaluate the absolute prediction error for the following can be used
 \begin{equation}
 \label{eqn:mohn3}
-|\rho_p| = \disp \frac{1}{(n-S+1)} \sum_{t=T-n}^{T-S}
+|\rho_p| = \disp \frac{1}{n-S+1} \sum_{t=T-n}^{T-S}
 \frac{\left| \hat{y}_{(1:t),t+S}-\hat{y}_{(1:T),t+S} \right|}{\hat{y}_{(1:T),t+S}}. 
 %\ \mbox{[rho for projection-absolute-error]}
 \end{equation} 
+\toshi{[Do we need this formala here? This is not used in this paper?]}
 
 
 When conducting the hindcast it is assumed that modelled variables are observable, processes exhibit constancy of structure in time, including those not specified in the model, and that collection of accurate and sufficient data is possible \parencite{hodges1992you}.
 
 \subsubsection{Prediction Skill}
+
+\toshi{I think this section header can be before ``We  define `retro-period' and `hc-period' as''.}
 
 The use of model based quantities means that bias can not actually be quantified. For example a reduction in both relative error (a measure of bias) and mean squared error (a measure of variance) can be achieved by shrinking terminal estimates towards recent historical values, at the expense of prediction skill. The absence of retrospective patterns in model based quantities, therefore, while reassuring is not sufficient for model validation, and model-free validation using prediction residuals should be used as well.
 
@@ -206,7 +214,7 @@ The use of model based quantities means that bias can not actually be quantified
 
 \subsubsection{Metrics}
 
-For the evaluation of model-based quantities, we use Mohn's rho ($\rho_M$ \toshi{$\rho_{Mr}$?}, equation \ref{eqn:mohn}) and a modified version ($\rho_{Mr}$ \toshi{$\rho_{p}$?}, equation \ref{eqn:mohn2}). $\rho_{p}$ is also a measure of prediction skill but "model based", however, for validation prerequisite i of \cite{hodges1992you} requires that the system be observable and measurable and so model free quantities should be used to estimate prediction skill.
+For the evaluation of model-based quantities, we use a modified version ($\rho_{Mr}$, equation \ref{eqn:mohn2}). $\rho_{p}$ is also a measure of prediction skill but "model based", however, for validation prerequisite i) of \cite{hodges1992you} requires that the system be observable and measurable and so model free quantities should be used to estimate prediction skill.
 
 We used the mean absolute scaled error (MASE, equation \ref{eqn:mase}) to evaluate prediction skill. The best statistical measure to use depends, however, on the objectives of the analysis and using more than one measure can be helpful in providing insight into the nature of observation and process error structures \parencite{kell2016xval}. Therefore we also use root mean squared error ($E^{\prime 2}$, equation \ref{eqn:rmse}), correlation ($\rho$) and the standard deviation ($\sigma$). 
 
@@ -224,8 +232,9 @@ This means that $E^\prime$, $\rho$ and $\sigma_f$ can be summarised simultaneous
 
 The retrospective analysis and the three step ahead predictions are shown in figure \ref{fig:retro}. These show the estimates of SSB and F relative to their maximum sustainable yield ($MSY$) reference points  $B_{MSY}$ and $F_{MSY}$. The retrospective analysis shows that SS base case and JABBA assessments are biased, and bias increases for the projection.  For SS, there is over estimation of SSB and underestimation of F, while JABBA shows a strong negative retrospective pattern in F and negative bias in biomass. Although for JABBA  $F:F_{MSY} \le 1$ stock biomass declines below $B_{MSY}$.
 
-The analysis is summarised in Tables \ref{tab:retro-rho} for Monh's $\rho$. Mohn's $\rho$ has to be in the range $[-0.15,0.2]$ for an assessment to be accepted then (Hurtado-Ferro et al., 2014). All the assessments apart from the base case estimates of F pass the Mohn's $\rho$ test for the retrospective analysis. When the 3 year projection is considered, however, all models other than the ASPM fail. Relative error is harder to interpret. 
+\toshi{$\rho_{Mr}$ and $\rho_P$??}
 
+The analysis is summarised in Tables \ref{tab:retro-rho} for Monh's $\rho$. Mohn's $\rho$ has to be in the range $[-0.15,0.2]$ for an assessment to be accepted then (Hurtado-Ferro et al., 2014). All the assessments apart from the base case estimates of F pass the Mohn's $\rho$ test for the retrospective analysis. When the 3 year projection is considered, however, all models other than the ASPM fail. Relative error is harder to interpret. 
 
 The results from the model-free hindcasts are shown in Figures~\ref{fig:hy} and \ref{fig:hy3} for the one and three year ahead predictions respectively. The background colour indicates whether MASE $\le 1$, see Table \ref{tab:mase} for the MASE values. For the base case and JABBA, prediction skill is poor for CPUE indices 2 and 3; the ASPM also performs poorly for Area 2. Prediction skill further deteriorates for the three step ahead projection, particularly for the base case and JABBA; although for ASPM, CPUE indices 1 and 3 still have good prediction skill. Area 1 is the centre of the stock distribution (move this sentence to methods).
 
@@ -240,7 +249,7 @@ The ASPM appears not to show patterns in the projections, CPUE index 2 performs 
 
 This paper aimed to support the definition of stock assessment as the description of the characteristics of a ’stock’ so that its biological reaction to being exploited can be rationally predicted and the predictions tested. There are many aspects of stock dynamics and productivity about which there is little information in stock assessment datasets \parencite[e.g.][]{lee2011m,lee2012steepness, jiao2012modelling,simon2012effects,pepin2015reconsidering,cury2014resolving}. A motivation was, therefore, to ensure that stock assessment advice is robust to uncertainty, hypotheses about different plausible states of nature are represented by alternative model structures, fixed parameters, and weighting of data components \parencite[][]{sharma2020trfmo}. 
 
-Model selection, however, based on traditional methods like Akaike’s Information Criteria  \parencite[AIC,][]{akaike1998information} is only suitable for comparing frameworks based on the same input data. Meanwhile, there is a danger, with diagnostics based on the inspection of residuals, of "hypothesis fishing" or "p-hacking" \parencite{wasserstein2016asa,head2015extent}, i.e. finding a pretext for excluding an index or adding extra parameters \parencite[e.g.][]{schirripa2017hypothesis} to improve the fit. If multiple true hypotheses are tested, some of them will likely be rejected falsely. Thus, it is valuable to reserve part of the data for model-free validation, so that a pattern’s significance is not tested on the same data set that suggested the pattern \parencite{arlot2010survey}. Therefore, we propose the use of hindcasting with cross-validation to evaluate prediction skill and show how to extend retrospective analysis to do this.
+Model selection, however, based on traditional methods like Akaike’s Information Criteria  \parencite[AIC,][]{akaike1998information} is only suitable for comparing frameworks based on the same input data. Meanwhile, there is a danger, with diagnostics based on the inspection of residuals, of "hypothesis fishing" or "p-hacking" \parencite{wasserstein2016asa,head2015extent}, i.e. finding a pretext for excluding an index or adding extra parameters \parencite[e.g.][]{schirripa2017hypothesis} to improve the fit. If multiple true hypotheses are tested, some of them will likely be rejected falsely. Thus, it is valuable to reserve part of the data for model-free validation, so that a pattern’s significance is not tested on the same data set that suggested the pattern \parencite{arlot2010survey}. Therefore, we propose the use of hindcasting with cross-validation to evaluate prediction skill and show how to extend retrospective analysis to do this
 
 As an example, three structurally different model families were used to assess the yellowfin tuna stock in the Indian Ocean. It was found that the model with the best prediction skill was ASPM. The poor performance of the integrated assessment model is likely related to large, sampling error in the length composition data, which therefore introduce noise rather than information in the estimated recruitment deviations. The Bayesian state-space biomass dynamic model, by contrast, produced reasonable performance metrics for the core fishing area (Region 1) and the south-western Indian Ocean (Region 3), but could not predict the diverging trends in CPUE for Eastern Indian Ocean Region. It appears that it is important to model both the age structure and spatial dynamics for this stock, while the quality of length samples needs to be improved. This illustrates the value of the approach since in the tRFMOs current practice is to run multiple models to evaluate uncertainty and provide advice on, while the evaluation of the value-of-information, the weighting and extension of models is still a research topic \cite{kell2016quantification}. 
 
